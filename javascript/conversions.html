@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html" class = "active">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>The typeof Operator</h3>
+                        <p>
+                            You can use the typeof operator to find the data type of a JavaScript variable.
+                        </p>
+                        <div class = "code_block">
+                            typeof "John"                 // Returns "string"<br>
+                            typeof 3.14                   // Returns "number"<br>
+                            typeof NaN                    // Returns "number"<br>
+                            typeof false                  // Returns "boolean"<br>
+                            typeof [1,2,3,4]              // Returns "object"<br>
+                            typeof {name:'John', age:34}  // Returns "object"<br>
+                            typeof new Date()             // Returns "object"<br>
+                            typeof function () {}         // Returns "function"<br>
+                            typeof myCar                  // Returns "undefined" *<br>
+                            typeof null                   // Returns "object"<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Converting Strings to Numbers</h3>
+                        <p>
+                            The global method Number() converts a variable (or a value) into a number. parseInt() and
+                            parseFloat can also be used.
+                        </p>
+                        <div class = "code_block">
+                            document.getElementById("demo").innerHTML =<br>
+                            Number("3.14") + "br" +<br>
+                            Number(Math.PI) + "br" +<br>
+                            Number("    ") + "br" +<br>
+                            Number("") + "br" +<br>
+                            Number("99 88") + "br" +<br>
+                            Number("John") + "br";      <br><br>
+                            //3.14<br>
+                            //3.141592653589793<br>
+                            //0<br>
+                            //0<br>
+                            //NaN<br>
+                            //NaN            <br>         
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Numbers to Strings</h3>
+                        <p>
+                            The global method String() can convert numbers to strings.
+                        </p>
+                        <div class = "code_block">
+                            String(x)         // returns a string from a number variable x<br> 
+                            String(123)       // returns a string from a number literal 123<br> 
+                            String(100 + 23)  // returns a string from a number from an expression   <br>                         
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Dates to Numbers</h3>
+                        <p>
+                            The global method Number() can be used to convert dates to numbers.
+                        </p>
+                        <div class = "code_block">
+                            d = new Date();<br> 
+                            Number(d)          // returns 1404568027739     <br>                       
+                        </div>
+                    </div>
+
+
+                    <div class = "content_block">
+                        <h3>Booleans to Numbers</h3>
+                        <p>
+                            The global method Number() can also convert booleans to numbers.
+                        </p>
+                        <div class = "code_block">
+                            Number(false)     // returns 0<br>
+                            Number(true)      // returns 1
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

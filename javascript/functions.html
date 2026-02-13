@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Intro</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a class="active" href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>JavaScript Functions</h3>
+                        <p>
+                            A JavaScript function is a block of code designed to perform a particular task.
+                            A JavaScript function is executed when "something" invokes it (calls it).
+                        </p>
+                        <div class = "code_block">
+                            function myFunction(p1, p2) {<br>
+                            &nbsp;&nbsp;return p1 * p2;<br>
+                           }
+                        </div>
+                    </div>
+
+                    <div class = "content_block">
+                        <h3>Function parameter and Return</h3>
+                        <p>
+                            unlike java, c++ you dont need to declared parameter datatype in javascript. It is similar to how python does it
+                        </p>
+                        <div class = "code_block">
+                            // Function is called, the return value will end up in x<br>
+                            let x = myFunction(4, 3);<br><br>
+
+                            function myFunction(a, b) {<br>
+                            // Function returns the product of a and b<br>
+                            &nbsp;&nbsp;return a * b;<br>
+                            }           
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Function Sequence</h3>
+                        <p>JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
+
+                            This example will end up displaying "Goodbye":</p>
+                        <div class = "code_block">
+                            function myFirst() {<br>
+                                &nbsp;&nbsp;return  myDisplayer("Hello");<br>
+                              }<br><br>
+                              
+                              function mySecond() {<br>
+                                &nbsp;&nbsp;return  myDisplayer("Goodbye");<br>
+                              }<br><br>
+                              
+                              myFirst();<br>
+                              mySecond();   <br>                                  
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Sequence Control</h3>
+                        <p>Sometimes you would like to have better control over when to execute a function.</p>
+                        <div class = "code_block">
+                            function myDisplayer(some) { <br>
+                                document.getElementById("demo").innerHTML = some; <br>
+                              } <br> <br>
+                              
+                              function myCalculator(num1, num2) { <br>
+                                let sum = num1 + num2; <br>
+                                return sum; <br>
+                              } <br> <br>
+                              
+                              let result = myCalculator(5, 5); <br>
+                              myDisplayer(result);  <br>                                     
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>callback</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            // Create an Array<br>
+                            const myNumbers = [4, 1, -20, -7, 5, 9, -6];<br><br>
+                            
+                            // Call removeNeg with a Callback<br>
+                            const posNumbers = removeNeg(myNumbers, (x) => x >= 0);<br><br>
+                            
+                            // Display Result<br>
+                            document.getElementById("demo").innerHTML = posNumbers;<br><br>
+                            
+                            // Remove negative numbers<br>
+                            function removeNeg(numbers, callback) {<br>
+                                &nbsp;&nbsp; const myArray = [];<br>
+                                &nbsp;&nbsp; for (const x of numbers) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; if (callback(x)) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; myArray.push(x);<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+                                        &nbsp;&nbsp; }<br>
+                                        &nbsp;&nbsp; return myArray;<br>
+                            }        <br>                             
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>setTimeout() Waiting for a Timeout</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            setTimeout(myFunction, 3000);<br><br>
+
+                            function myFunction() {<br>
+                                &nbsp;&nbsp;  document.getElementById("demo").innerHTML = "I love You !!";<br>
+                            }                                     
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>setInterval() Waiting for Intervals</h3>
+                        <p>When using the JavaScript function setInterval(), 
+                            you can specify a callback function to be executed for each interval</p>
+                        <div class = "code_block">
+                            setInterval(myFunction, 1000);<br><br>
+
+                            function myFunction() {<br>
+                                &nbsp;&nbsp;  let d = new Date();<br>
+                                &nbsp;&nbsp;  document.getElementById("demo").innerHTML=<br>
+                                &nbsp;&nbsp;  d.getHours() + ":" +<br>
+                                &nbsp;&nbsp;  d.getMinutes() + ":" +<br>
+                                &nbsp;&nbsp;  d.getSeconds();<br>
+                            }                                     
+                        </div>
+                        type text to animate
+                        <textarea id = "text_area_for_interval"></textarea>
+                        <input type = "button" value = "animate text" onclick = "animateText()">
+                        <p id = "sample_text"></p>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Promise Object</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            function myDisplayer(some) {<br>
+                                &nbsp;&nbsp;  document.getElementById("demo").innerHTML = some;<br>
+                              }<br><br>
+                              
+                              let myPromise = new Promise(function(myResolve, myReject) {<br>
+                                &nbsp;&nbsp;  let x = 0;<br><br>
+                              
+                              // The producing code (this may take some time)<br><br>
+                              
+                                if (x == 0) {<br>
+                                    &nbsp;&nbsp;  myResolve("OK");<br>
+                                } else {<br>
+                                    &nbsp;&nbsp;  myReject("Error");<br>
+                                }<br>
+                              });<br><br>
+                              
+                              myPromise.then(<br>
+                              &nbsp;&nbsp;  function(value) {myDisplayer(value);},<br>
+                              &nbsp;&nbsp;  function(error) {myDisplayer(error);}<br>
+                              );                                     
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Waiting for a file</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            function myDisplayer(some) {<br>
+                                &nbsp;&nbsp;  document.getElementById("demo").innerHTML = some;<br>
+                              }<br><br>
+                              
+                              function getFile(myCallback) {<br>
+                                &nbsp;&nbsp;  let req = new XMLHttpRequest();<br>
+                                &nbsp;&nbsp;  req.onload = function() {<br>
+                                    &nbsp;&nbsp; &nbsp;&nbsp;  if (req.status == 200) {<br>
+                                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  myCallback(this.responseText);<br>
+                                        &nbsp;&nbsp; &nbsp;&nbsp;  } else {<br>
+                                            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  myCallback("Error: " + req.status);<br>
+                                            &nbsp;&nbsp; &nbsp;&nbsp;  }<br>
+                                            &nbsp;&nbsp; &nbsp;&nbsp;  }<br>
+                                            &nbsp;&nbsp;  req.open('GET', "mycar.html");<br>
+                                            &nbsp;&nbsp;  req.send();<br>
+                              }<br><br>
+                              
+                              getFile(myDisplayer);                                     
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3></h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3></h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

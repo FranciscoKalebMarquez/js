@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html" class = "active">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>JavaScript Objects</h3>
+                        <p>
+                            In JavaScript, almost "everything" is an object.<br><br>
+
+                            Booleans can be objects (if defined with the new keyword)<br>
+                            Numbers can be objects (if defined with the new keyword)<br>
+                            Strings can be objects (if defined with the new keyword)<br>
+                            Dates are always objects<br>
+                            Maths are always objects<br>
+                            Regular expressions are always objects<br>
+                            Arrays are always objects<br>
+                            Functions are always objects<br>
+                            Objects are always objects<br><br>
+                            All JavaScript values, except primitives, are objects.
+                        </p>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Primitives</h3>
+                        <p>
+                            A primitive value is a value that has no properties or methods.<br>
+                            3.14 is a primitive value      <br>                      
+                            A primitive data type is data that has a primitive value.<br>
+                            JavaScript defines 7 types of primitive data types:<br><br>
+                            Examples<br>
+                            string<br>
+                            number<br>
+                            boolean<br>
+                            null<br>
+                            undefined<br>
+                            symbol<br>
+                            bigint<br><br>
+                            Primitive values are immutable (they are hardcoded and cannot be changed).<br>
+                            if x = 3.14, you can change the value of x, but you cannot change the value of 3.14.<br>
+                        </p>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Objects are Variables</h3>
+                        <p>
+                            Objects are variables too. But objects can contain many values.
+
+                            Object values are written as name : value pairs (name and value separated by a colon).
+                        </p>
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;firstName : "John",<br>
+                                &nbsp;&nbsp;&nbsp;lastName  : "Doe",<br>
+                                &nbsp;&nbsp;&nbsp;age     : 50,<br>
+                                &nbsp;&nbsp;&nbsp;eyeColor  : "blue"<br>
+                              };<br><br>
+                              
+                              document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Object Properties</h3>
+                        <p>
+                            <table>
+                                <tr>
+                                    <th>Property:</th>
+                                    <th>Value</th>
+                                </tr>
+                                <tr>
+                                    <td>firstName:</td>
+                                    <td>John</td>         
+                                </tr>
+                                <tr>
+                                    <td>lastName:</td>
+                                    <td>Doe</td>       
+                                </tr>
+                                <tr>
+                                    <td>age:</td>
+                                    <td>50</td>  
+                                </tr>
+                                <tr>
+                                    <td>eyeColor:</td>
+                                    <td>blue</td>   
+                                </tr>
+                            </table>                           	                            	                            	
+                            Objects written as name value pairs are similar to:
+
+                            Associative arrays in PHP<br>
+                            Dictionaries in Python<br>
+                            Hash tables in C<br>
+                            Hash maps in Java<br>
+                            Hashes in Ruby and Perl<br>
+                        </p>
+                        Accessing properties
+                        <div class = "code_block">
+                            person.firstname + " is " + person.age + " years old.";
+                        </div>
+                        using for in loop
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;fname:" John",<br>
+                                &nbsp;&nbsp;&nbsp;lname:" Doe",<br>
+                                &nbsp;&nbsp;&nbsp;age: 25<br>
+                              };<br><br>
+                              
+                              for (let x in person) {<br>
+                                &nbsp;&nbsp;&nbsp;txt += person[x];<br>
+                              }
+                        </div>
+                        Adding New Properties
+                        <div class = "code_block">
+                            person.nationality = "English";
+                        </div>
+                        Deleting Properties
+                        <div class = "code_block">
+                            delete person.age;
+                        </div>
+                        Nested Objects
+                        <div class = "code_block">
+                            myObj = {<br>
+                                &nbsp;&nbsp;&nbsp;name:"John",<br>
+                                &nbsp;&nbsp;&nbsp;age:30,<br>
+                                &nbsp;&nbsp;&nbsp;cars: {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;car1:"Ford",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;car2:"BMW",<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;car3:"Fiat"<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                              }
+                        </div>
+                        Accessing nested object
+                        <div class = "code_block">
+                            myObj.cars.car2; //or <br>
+                            myObj.cars["car2"];
+                        </div>
+                        Nested Arrays and Objects
+                        <div class = "code_block">
+                            const myObj = {<br>
+                                &nbsp;&nbsp;&nbsp;name: "John",<br>
+                                &nbsp;&nbsp;&nbsp;age: 30,<br>
+                                &nbsp;&nbsp;&nbsp;cars: [<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{name:"Ford", models:["Fiesta", "Focus", "Mustang"]},<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{name:"BMW", models:["320", "X3", "X5"]},<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{name:"Fiat", models:["500", "Panda"]}<br>
+                                &nbsp;&nbsp;&nbsp;]<br>
+                              }
+                        </div>
+                        To access arrays inside arrays, use a for-in loop for each array
+                        <div class = "code_block">
+                            for (let i in myObj.cars) {<br>
+                                &nbsp;&nbsp;&nbsp;x += "h1" + myObj.cars[i].name + "/h1"; <br>
+                                &nbsp;&nbsp;&nbsp; for (let j in myObj.cars[i].models) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x += myObj.cars[i].models[j];<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                              }
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Object Methods</h3>
+                        <p>
+                            Methods are actions that can be performed on objects.
+
+                            Object properties can be both primitive values, other objects, and functions.
+                            
+                            An object method is an object property containing a function definition.
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Property:</th>
+                                <th>Value</th>
+                            </tr>
+                            <tr>
+                                <td>firstName:</td>
+                                <td>John</td>         
+                            </tr>
+                            <tr>
+                                <td>lastName:</td>
+                                <td>Doe</td>       
+                            </tr>
+                            <tr>
+                                <td>age:</td>
+                                <td>50</td>  
+                            </tr>
+                            <tr>
+                                <td>eyeColor:</td>
+                                <td>blue</td>   
+                            </tr>
+                            <tr>
+                                <td>Fullname:</td>
+                                <td>function() {return this.firstName + " " + this.lastName;}</td>   
+                            </tr>
+                        </table>  
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;firstName: "John",<br>
+                                &nbsp;&nbsp;&nbsp;lastName: "Doe",<br>
+                                &nbsp;&nbsp;&nbsp;id: 5566,<br>
+                                &nbsp;&nbsp;&nbsp;fullName: function() {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.firstName + " " + this.lastName;<br>
+                                    &nbsp;&nbsp;&nbsp;}<br>
+                              };<br>
+                        </div>
+                        What is this?<br><br>
+                        In JavaScript, the this keyword refers to an object.
+
+                        Which object depends on how this is being invoked (used or called).
+                        
+                        The this keyword refers to different objects depending on how it is used:<br>
+                        Accessing method
+                        <div class = "code_block">
+                            objectName.methodName()
+                        </div>  
+                        Adding a Method to an Object
+                        <div class = "code_block">
+                            person.name = function () {<br>
+                                &nbsp;&nbsp;&nbsp;return this.firstName + " " + this.lastName;<br>
+                              };
+                        </div>  
+                        
+                    </div>
+                    <div class = "content_block">
+                        <h3>Creating a JavaScript Object</h3>
+                        Using an Object Literal
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;firstName : "John",<br>
+                                &nbsp;&nbsp;&nbsp;lastName  : "Doe",<br>
+                                &nbsp;&nbsp;&nbsp;age     : 50,<br>
+                                &nbsp;&nbsp;&nbsp;eyeColor  : "blue"<br>
+                              };<br>
+                        </div>
+                        Using the JavaScript Keyword new
+                        <div class = "code_block">
+                            const person = new Object();<br>
+                            person.firstName = "John";<br>
+                            person.lastName = "Doe";<br>
+                            person.age = 50;<br>
+                            person.eyeColor = "blue";<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Objects are Mutable</h3>
+                        <p>
+                            Objects are mutable: They are addressed by reference, not by value.
+
+                            If person is an object, the following statement will not create a copy of person
+                        </p>
+                        <div class = "code_block">
+                            const x = person;  // Will not create a copy of person.
+                        </div>
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;firstName:"John",<br>
+                                &nbsp;&nbsp;&nbsp;lastName:"Doe",<br>
+                                &nbsp;&nbsp;&nbsp;age:50, eyeColor:"blue"<br>
+                              }<br><br>
+                              
+                              const x = person;<br>
+                              x.age = 10;      // Will change both x.age and person.age<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>How to Display JavaScript Objects?</h3>
+                        <p>
+                            Some common solutions to display JavaScript objects are:<br><br>
+
+                            Displaying the Object Properties by name<br>
+                            Displaying the Object Properties in a Loop<br>
+                            Displaying the Object using Object.values()<br>
+                            Displaying the Object using JSON.stringify()                            
+                        </p>
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp; name: "John",<br>
+                                &nbsp;&nbsp;&nbsp; age: 30,<br>
+                                &nbsp;&nbsp;&nbsp; city: "New York"<br>
+                              };<br><br>
+                              
+                              document.getElementById("demo").innerHTML = person;<br>
+                              // output: [object Object]
+                        </div>
+                        Displaying Object Properties
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;  name: "John",<br>
+                                &nbsp;&nbsp;&nbsp;  age: 30,<br>
+                                &nbsp;&nbsp;&nbsp;  city: "New York"<br>
+                              };<br><br>
+                              
+                              document.getElementById("demo").innerHTML =<br>
+                              person.name + "," + person.age + "," + person.city;<br>
+                        </div>
+                        Displaying the Object in a Loop
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;  name: "John",<br>
+                                &nbsp;&nbsp;&nbsp;  age: 30,<br>
+                                &nbsp;&nbsp;&nbsp;  city: "New York"<br>
+                              };<br><br>
+                              
+                              let txt = "";<br>
+                              for (let x in person) {<br>
+                                &nbsp;&nbsp;&nbsp;  txt += person[x] + " ";<br>
+                              };<br><br>
+                              
+                              document.getElementById("demo").innerHTML = txt;<br>
+                        </div>
+                        Displaying using Object.values()
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp; name: "John",<br>
+                                &nbsp;&nbsp;&nbsp; age: 30,<br>
+                                &nbsp;&nbsp;&nbsp; city: "New York"<br>
+                              };<br><br>
+                              
+                              const myArray = Object.values(person);<br>
+                              document.getElementById("demo").innerHTML = myArray;<br>
+                        </div>
+                        Display using JSON.stringify()
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;  name: "John",<br>
+                                &nbsp;&nbsp;&nbsp;  age: 30,<br>
+                                &nbsp;&nbsp;&nbsp;  city: "New York"<br>
+                              };<br><br>
+                              
+                              let myString = JSON.stringify(person);<br>
+                              document.getElementById("demo").innerHTML = myString;<br>
+                        </div>
+                        Stringify Dates
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp; name: "John",<br>
+                                &nbsp;&nbsp;&nbsp; today: new Date()<br>
+                              };<br><br>
+                              
+                              let myString = JSON.stringify(person);<br>
+                              document.getElementById("demo").innerHTML = myString;<br>
+                        </div>
+                        Stringify Functions<br>
+                        JSON.stringify will not stringify functions
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp; name: "John",<br>
+                                &nbsp;&nbsp;&nbsp; age: function () {return 30;}<br>
+                              };<br><br>
+                              
+                              let myString = JSON.stringify(person);<br>
+                              document.getElementById("demo").innerHTML = myString;<br>
+                        </div>
+                        Stringify Arrays
+                        <div class = "code_block">
+                            const arr = ["John", "Peter", "Sally", "Jane"];<br><br>
+
+                            let myString = JSON.stringify(arr);<br>
+                            document.getElementById("demo").innerHTML = myString; <br>                          
+                        </div>
+
+                    </div>
+                    
+                    <div class = "content_block">
+                        <h3>JavaScript Object Accessors(Getters and Setters)</h3>
+                        <p>
+                            Getters and setters allow you to define Object Accessors (Computed Properties)<br>
+                            similar to fields and properties in c# OOP
+                        </p>
+                        JavaScript Getter
+                        <div class = "code_block">
+                            // Create an object:<br> 
+                            const person = {<br> 
+                                &nbsp;&nbsp;&nbsp; firstName: "John",<br> 
+                                &nbsp;&nbsp;&nbsp; lastName: "Doe",<br> 
+                                &nbsp;&nbsp;&nbsp; language: "en",<br> 
+                                &nbsp;&nbsp;&nbsp; get lang() {<br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return this.language;<br> 
+                                    &nbsp;&nbsp;&nbsp; }<br> 
+                            };<br> <br> 
+                            
+                            // Display data from the object using a getter:<br> 
+                            document.getElementById("demo").innerHTML = person.lang; <br>                          
+                        </div>
+                        JavaScript Setter
+                        <div class = "code_block">
+                            const person = {<br> 
+                                &nbsp;&nbsp;&nbsp;  firstName: "John",<br> 
+                                &nbsp;&nbsp;&nbsp;  lastName: "Doe",<br> 
+                                &nbsp;&nbsp;&nbsp;  language: "",<br> 
+                                &nbsp;&nbsp;&nbsp;  set lang(value) {<br> 
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.language = value;<br> 
+                                    &nbsp;&nbsp;&nbsp;  }<br> 
+                              };<br> <br> 
+                              
+                              // Set an object property using a setter:<br> 
+                              person.lang = "en";<br> <br> 
+                              
+                              // Display data from the object:<br> 
+                              document.getElementById("demo").innerHTML = person.language;                                                     
+                        </div>
+                        Why Using Getters and Setters?<br> <br> 
+                        It gives simpler syntax<br> 
+                        It allows equal syntax for properties and methods<br> 
+                        It can secure better data quality<br> 
+                        It is useful for doing things behind-the-scenes<br> 
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Object Constructors</h3>
+                        <p>
+
+                        </p>
+                        <div class = "code_block">
+                            // Constructor function for Person objects<br>
+                            function Person(first, last, age, eye) {<br>
+                                &nbsp;&nbsp;&nbsp;  this.firstName = first;<br>
+                                &nbsp;&nbsp;&nbsp;  this.lastName = last;<br>
+                                &nbsp;&nbsp;&nbsp;  this.age = age;<br>
+                                &nbsp;&nbsp;&nbsp;  this.eyeColor = eye;<br>
+                            }<br><br>
+                            
+                            // Create a Person object<br>
+                            const myFather = new Person("John", "Doe", 50, "blue");<br><br>
+                            
+                            // Display age<br>
+                            document.getElementById("demo").innerHTML =<br>
+                            "My father is " + myFather.age + ".";  <br>                           
+                        </div>
+                        Adding a property to an object  
+                        <div class = "code_block">
+                            // Constructor function for Person objects<br>
+                            function Person(first, last, age, eye) {<br>
+                                &nbsp;&nbsp;&nbsp;  this.firstName = first;<br>
+                                &nbsp;&nbsp;&nbsp;  this.lastName = last;<br>
+                                &nbsp;&nbsp;&nbsp;  this.age = age;<br>
+                                &nbsp;&nbsp;&nbsp;  this.eyeColor = eye;<br>
+                            }<br><br>
+                            
+                            // Create 2 Person objects<br>
+                            const myFather = new Person("John", "Doe", 50, "blue");<br>
+                            const myMother = new Person("Sally", "Rally", 48, "green");<br><br>
+                            
+                            // Add nationality to first object<br>
+                            myFather.nationality = "English";<br><br>
+                            
+                            // Display nationality <br>
+                            document.getElementById("demo").innerHTML =<br>
+                            "My father is " + myFather.nationality;  <br>                          
+                        </div>
+                        Adding a Method to an Object
+                        <div class = "code_block">
+                            myFather.name = function () {<br>  
+                                &nbsp;&nbsp;&nbsp;  return this.firstName + " " + this.lastName;<br>  
+                              };
+                        </div>
+                        Adding a Property to a Constructor<br>
+                        You CANNOT add a new property to an object constructor THE SAME WAY<br>
+                         you add a new property to an existing object<br>
+                         you must use prototype
+                        <div class = "code_block">
+                            // Constructor function for Person objects<br>
+                            function Person(first, last, age, eye) {<br>
+                                &nbsp;&nbsp;&nbsp;  this.firstName = first;<br>
+                                &nbsp;&nbsp;&nbsp;  this.lastName = last;<br>
+                                &nbsp;&nbsp;&nbsp;  this.age = age;<br>
+                                &nbsp;&nbsp;&nbsp;  this.eyeColor = eye;<br>
+                            }<br><br>
+                            
+                            // You can NOT add a new property to a constructor function<br>
+                            Person.nationality = "English";<br><br>
+                            
+                            // Create 2 Person objects<br>
+                            const myFather = new Person("John", "Doe", 50, "blue");<br>
+                            const myMother = new Person("Sally", "Rally", 48, "green");<br><br>
+                            
+                            // Display nationality<br>
+                            document.getElementById("demo").innerHTML =<br>
+                            "The nationality of my father is " + myFather.nationality;   <br>
+                            //output: undefined                         
+                        </div>
+                        using prototype to add a new property and method to a Constructor
+                        <div class = "code_block">
+                            function Person(first, last, age, eyecolor) {<br>
+                                &nbsp;&nbsp;&nbsp;  this.firstName = first;<br>
+                                &nbsp;&nbsp;&nbsp;  this.lastName = last;<br>
+                                &nbsp;&nbsp;&nbsp;  this.age = age;<br>
+                                &nbsp;&nbsp;&nbsp;  this.eyeColor = eyecolor;<br>
+                              }<br><br>
+                              
+                              Person.prototype.nationality = "English";<br>
+                              const myFather = new Person("John", "Doe", 50, "blue");<br>
+                              myFather.nationality = "Indian"; //you can change the added property value<br><br>
+
+                              Person.prototype.name = function() {<br>
+                                &nbsp;&nbsp;&nbsp;  return this.firstName + " " + this.lastName;<br>
+                              };<br>
+                        </div>
+                        Adding a Method to a Constructor
+                        <div class = "code_block">
+                            // Constructor function for Person objects<br>
+                            function Person(first, last, age, eye) {<br>
+                                &nbsp;&nbsp;&nbsp;  this.firstName = first;<br>
+                                &nbsp;&nbsp;&nbsp;  this.lastName = last;<br>
+                                &nbsp;&nbsp;&nbsp;  this.age = age;<br>
+                                &nbsp;&nbsp;&nbsp;  this.eyeColor = eye;<br>
+                                &nbsp;&nbsp;&nbsp;  this.name = function() {<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  return this.firstName + " " + this.lastName<br>
+                                    &nbsp;&nbsp;&nbsp;  };<br>
+                            }<br><br>
+                            
+                            // Create a Person object<br>
+                            const myFather = new Person("John", "Doe", 50, "blue");<br><br>
+                            
+                            // Display full name<br>
+                            document.getElementById("demo").innerHTML =<br>
+                            "My father is " + myFather.name();     <br>                        
+                        </div>
+                        <div class = "code_block">
+                            // Constructor function for Person objects<br>
+                            function Person(firstName,lastName,age,eyeColor) {<br>
+                                &nbsp;&nbsp;&nbsp;  this.firstName = firstName;<br>
+                                &nbsp;&nbsp;&nbsp;  this.lastName = lastName;<br>
+                                &nbsp;&nbsp;&nbsp;  this.age = age;<br>
+                                &nbsp;&nbsp;&nbsp;  this.eyeColor = eyeColor;<br>
+                                &nbsp;&nbsp;&nbsp;  this.changeName = function (name) {<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.lastName = name;<br>
+                                    &nbsp;&nbsp;&nbsp;  }<br>
+                            }<br>
+                            // Create a Person object<br>
+                            const myMother = new Person("Sally","Rally",48,"green");<br><br>
+                            
+                            // Change last name<br>
+                            myMother.changeName("Doe");<br><br>
+                            
+                            // Display last name<br>
+                            document.getElementById("demo").innerHTML =<br>
+                            "My mother's last name is " + myMother.lastName;   <br>                        
+                        </div>
+
+                    </div>
+                    <div class = "content_block">
+                        <h3>Built-in JavaScript Constructors</h3>
+                        <p>
+                            JavaScript has built-in constructors for native objects
+                        </p>
+                        <div class = "code_block">
+                            new String()    // A new String object<br> 
+                            new Number()    // A new Number object<br> 
+                            new Boolean()   // A new Boolean object<br> 
+                            new Object()    // A new Object object<br> 
+                            new Array()     // A new Array object<br> 
+                            new RegExp()    // A new RegExp object<br> 
+                            new Function()  // A new Function object<br> 
+                            new Date()      // A new Date object   <br>                         
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Sets</h3>
+                        <p>
+                            A JavaScript Set is a collection of unique values.
+
+                            Each value can only occur once in a Set.
+                            
+                            A Set can hold any value of any data type.                           
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>new Set()</td>
+                                <td>Creates a new Set</td>
+                            </tr>
+                            <tr>
+                                <td>add()</td>
+                                <td>Adds a new element to the Set</td>
+                            </tr>
+                            <tr>
+                                <td>delete()</td>
+                                <td>Removes an element from a Set</td>
+                            </tr>
+                            <tr>
+                                <td>has()</td>
+                                <td>Returns true if a value exists</td>
+                            </tr>
+                            <tr>
+                                <td>clear()</td>
+                                <td>Removes all elements from a Set</td>
+                            </tr>
+                            <tr>
+                                <td>forEach()</td>
+                                <td>Invokes a callback for each element</td>
+                            </tr>
+                            <tr>
+                                <td>values()</td>
+                                <td>Returns an Iterator with all the values in a Set</td>
+                            </tr>
+                            <tr>
+                                <td>keys()</td>
+                                <td>Same as values()</td>
+                            </tr>
+                            <tr>
+                                <td>entries()</td>
+                                <td>Returns an Iterator with the [value,value] pairs from a Set</td>
+                            </tr>
+
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+
+                            <tr>
+                                <td>size</td>
+                                <td>Returns the number elements in a Set</td>
+                            </tr>
+                        </table>
+                        new Set() Method
+                        <div class = "code_block">
+                            // Create a Set<br>
+                            const letters = new Set(["a","b","c"]);<br>
+                        </div>
+                        The add() Method
+                        <div class = "code_block">
+                            letters.add("d");<br>
+                            letters.add("e");<br>                      
+                        </div>
+                        The forEach() Method
+                        <div class = "code_block">
+                            // Create a Set<br>
+                            const letters = new Set(["a","b","c"]);<br><br>
+                            
+                            // List all entries<br>
+                            let text = "";<br>
+                            letters.forEach (function(value) {<br>
+                                &nbsp;&nbsp;&nbsp; text += value;<br>
+                            })         <br>                   
+                        </div>
+                        The values() Method
+                        <div class = "code_block">
+                            letters.values()   // Returns [object Set Iterator]<br><br>
+
+                            // List all Values<br>
+                            let text = "";<br>
+                            for (const entry of myIterator) {<br>
+                                &nbsp;&nbsp;&nbsp;  text += entry;<br>
+                            }<br>
+                        </div>
+                        The keys() Method - keys() returns the same as values().
+                        <div class = "code_block">
+                            letters.keys()   // Returns [object Set Iterator]
+                        </div>
+                        The entries() Method - entries() returns [value,value] pairs instead of [key,value] pairs.<br>
+                        This makes Sets compatible with Maps
+                        <div class = "code_block">
+                            // Create an Iterator<br>
+                            const myIterator = letters.entries();<br><br>
+                            
+                            // List all Entries<br>
+                            let text = "";<br>
+                            for (const entry of myIterator) {<br>
+                                &nbsp;&nbsp;&nbsp;  text += entry;<br>
+                            }<br>      
+                            // output: a,a <br>
+                            // b,b <br>
+                            // c,c  
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Maps</h3>
+                        <p>
+                            A Map holds key-value pairs where the keys can be any datatype.<br>
+
+                            A Map remembers the original insertion order of the keys.<br>
+                            
+                            A Map has a property that represents the size of the map.
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>new Map()</td>
+                                <td>Creates a new Map Object</td>
+                            </tr>
+                            <tr>
+                                <td>set()</td>
+                                <td>Sets the value for a key in a Map</td>
+                            </tr>
+                            <tr>
+                                <td>get()</td>
+                                <td>Gets the value for a key in a Map</td>
+                            </tr>
+                            <tr>
+                                <td>clear()</td>
+                                <td>Removes all the elements from a Map</td>
+                            </tr>
+                            <tr>
+                                <td>delete()</td>
+                                <td>Removes a Map element specified by a key</td>
+                            </tr>
+                            <tr>
+                                <td>has()</td>
+                                <td>returns true if a key exists in a Map</td>
+                            </tr>
+                            <tr>
+                                <td>forEach()</td>
+                                <td>Invokes a callback for each key/value pair in a Map</td>
+                            </tr>
+                            <tr>
+                                <td>entries()</td>
+                                <td>returns an iterator object with the [key, value] pairs in a Map</td>
+                            </tr>
+                            <tr>
+                                <td>keys()</td>
+                                <td>Returns an iterator object with the keys in a Map</td>
+                            </tr>
+                            <tr>
+                                <td>values()</td>
+                                <td>Returns an iterator object of the values in a Map</td>
+                            </tr>
+
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+
+                            <tr>
+                                <td>size</td>
+                                <td>Returns the number of Map elements</td>
+                            </tr>
+                        </table>
+                        new Map() - create Map object
+                        <div class = "code_block">
+                            // Create a Map<br>
+                            const fruits = new Map([<br>
+                            &nbsp;&nbsp;&nbsp;  ["apples", 500],<br>
+                            &nbsp;&nbsp;&nbsp;  ["bananas", 300],<br>
+                            &nbsp;&nbsp;&nbsp;  ["oranges", 200]<br>
+                            ]);    <br>                       
+                        </div>
+                        Map.set() - add elements to a Map
+                        <div class = "code_block">
+                            // Create a Map<br>
+                            const fruits = new Map();<br><br>
+                            
+                            // Set Map Values<br>
+                            fruits.set("apples", 500);<br>
+                            fruits.set("bananas", 300);<br>
+                            fruits.set("oranges", 200);    <br>                        
+                        </div>
+                        Map.get() - gets the value of a key in a Map
+                        <div class = "code_block">
+                            fruits.get("apples");    // Returns 500
+                        </div>
+                        Map.size - returns the number of elements in a Map
+                        <div class = "code_block">
+                            fruits.size; // returns 3
+                        </div>
+                        Map.delete()
+                        <div class = "code_block">
+                            fruits.delete("apples");
+                        </div>
+                        Map.clear()
+                        <div class = "code_block">
+                            fruits.clear();
+                        </div>
+                        Map.has()
+                        <div class = "code_block">
+                            fruits.has("apples");
+                        </div>
+                        Map.forEach()
+                        <div class = "code_block">
+                            // List all entries <br>
+                            let text = ""; <br>
+                            fruits.forEach (function(value, key) { <br>
+                                &nbsp;&nbsp;&nbsp;  text += key + ' = ' + value; <br>
+                            }) <br>             
+                        </div>
+                        Map.entries() - used to loop and print key value pairs in Map
+                        <div class = "code_block">
+                            const fruits = new Map([<br>
+                            &nbsp;&nbsp;&nbsp;  ["apples", 500],<br>
+                            &nbsp;&nbsp;&nbsp;  ["bananas", 300],<br>
+                            &nbsp;&nbsp;&nbsp;  ["oranges", 200]<br>
+                            ]);    <br> <br> 
+
+                            // List all entries<br>
+                            let text = "";<br>
+                            for (const x of fruits.entries()) {<br>
+                                &nbsp;&nbsp;&nbsp;  text += x;<br>
+                            }        <br>
+                            // apples,500<br>
+                            //bananas,300<br>
+                            //oranges,200   <br>               
+                        </div>
+                        Map.keys() - used to get the key part of the key-value pair
+                        <div class = "code_block">
+                            // List all keys <br>   
+                            let text = ""; <br>   
+                            for (const x of fruits.keys()) { <br>   
+                                &nbsp;&nbsp;&nbsp;  text += x; <br>   
+                            }                           
+                        </div>
+                        Map.values() - used to get the value part of the key-value pair
+                        <div class = "code_block">
+                            // List all values<br>  
+                            let text = "";<br>  
+                            for (const x of fruits.values()) {<br>  
+                                &nbsp;&nbsp;&nbsp;  text += x;<br>  
+                            }                            
+                        </div>
+                        Objects as Keys
+                        <div class = "code_block">
+                            // Create Objects<br> 
+                            const apples = {name: 'Apples'};<br> 
+                            const bananas = {name: 'Bananas'};<br> 
+                            const oranges = {name: 'Oranges'};<br> <br> 
+
+                            // Create a Map<br> 
+                            const fruits = new Map();<br> <br> 
+
+                            // Add new Elements to the Map<br> 
+                            fruits.set(apples, 500);<br> 
+                            fruits.set(bananas, 300);<br> 
+                            fruits.set(oranges, 200);<br> <br> 
+
+                            //to access<br> 
+                            fruits.get("apples") //wont work<br> 
+                            fruits.get(apples) // would work because key is an object not a string
+                        </div>
+                        
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript ES5 Object Methods</h3>
+                        Managing Objects
+                        <div class = "code_block">
+                            // Create object with an existing object as prototype<br> 
+                            Object.create()<br> <br> 
+                            
+                            // Adding or changing an object property<br> 
+                            Object.defineProperty(object, property, descriptor)<br> <br> 
+                            
+                            // Adding or changing object properties<br> 
+                            Object.defineProperties(object, descriptors)<br> <br> 
+                            
+                            // Accessing Properties<br> 
+                            Object.getOwnPropertyDescriptor(object, property)<br> <br> 
+                            
+                            // Returns all properties as an array<br> 
+                            Object.getOwnPropertyNames(object)<br> <br> 
+                            
+                            // Accessing the prototype<br> 
+                            Object.getPrototypeOf(object)<br> <br> 
+                            
+                            // Returns enumerable properties as an array<br> 
+                            Object.keys(object)
+                                                      
+                        </div>
+                        Protecting Objects
+                        <div class = "code_block">
+                            // Prevents adding properties to an object<br> 
+                            Object.preventExtensions(object)<br> <br> 
+                            
+                            // Returns true if properties can be added to an object<br> 
+                            Object.isExtensible(object)<br> <br> 
+                            
+                            // Prevents changes of object properties (not values)<br> 
+                            Object.seal(object)<br> <br> 
+                            
+                            // Returns true if object is sealed<br> 
+                            Object.isSealed(object)<br> <br> 
+                            
+                            // Prevents any changes to an object<br> 
+                            Object.freeze(object)<br> <br> 
+                            
+                            // Returns true if object is frozen<br> 
+                            Object.isFrozen(object)                           
+                        </div>
+                        Changing a Property Value
+                        <div class = "code_block">
+                            const person = {<br> 
+                                &nbsp;&nbsp;&nbsp;  firstName: "John",<br> 
+                                &nbsp;&nbsp;&nbsp;  lastName : "Doe",<br> 
+                                &nbsp;&nbsp;&nbsp;  language : "EN"<br> 
+                              };<br> <br> 
+                              
+                              // Change a property<br> 
+                              Object.defineProperty(person, "language", {value : "NO"});                            
+                        </div>
+                        Changing Meta Data
+                        <div class = "code_block">
+                            writable : true      // Property value can be changed<br> 
+                            enumerable : true    // Property can be enumerated<br> 
+                            configurable : true  // Property can be reconfigured   <br>  <br> 
+                            Object.defineProperty(person, "language", {writable:false});                   
+                        </div>
+                        ES5 allows getters and setters to be changed:
+                        <div class = "code_block">
+                            // Defining a getter<br> 
+                            get: function() { return language }<br> 
+                            // Defining a setter<br> 
+                            set: function(value) { language = value }   <br>  
+                        </div>
+                        Listing All Properties
+                        <div class = "code_block">
+                            const person = {<br> 
+                                &nbsp;&nbsp;&nbsp;  firstName: "John",<br> 
+                                &nbsp;&nbsp;&nbsp;  lastName : "Doe",<br> 
+                                &nbsp;&nbsp;&nbsp;  language : "EN"<br> 
+                              };<br> <br> 
+                              
+                              Object.defineProperty(person, "language", {enumerable:false});<br> 
+                              Object.getOwnPropertyNames(person);  // Returns an array of properties
+                        </div>
+                        Listing Enumerable Properties
+                        <div class = "code_block">
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;  firstName: "John",<br>
+                                &nbsp;&nbsp;&nbsp;  lastName : "Doe",<br>
+                                &nbsp;&nbsp;&nbsp;  language : "EN"<br>
+                              };<br><br>
+                              
+                              Object.defineProperty(person, "language", {enumerable:false});<br>
+                              Object.keys(person);  // Returns an array of enumerable properties                            
+                        </div>
+                        Adding a Property
+                        <div class = "code_block">
+                            // Create an object:<br>
+                            const person = {<br>
+                                &nbsp;&nbsp;&nbsp;  firstName: "John",<br>
+                                &nbsp;&nbsp;&nbsp;  lastName : "Doe",<br>
+                              &nbsp;&nbsp;&nbsp;  language : "EN"<br>
+                            };<br><br>
+                            
+                            // Add a property<br>
+                            Object.defineProperty(person, "birthYear", {value:"2008"});                           
+                        </div>
+                        Adding Getters and Setters
+                        <div class = "code_block">
+                            //Create an object<br>
+                            const person = {firstName:"John", lastName:"Doe"};<br><br>
+                            
+                            // Define a getter<br>
+                            Object.defineProperty(person, "fullName", {<br>
+                                &nbsp;&nbsp;&nbsp;  get: function () {return this.firstName + " " + this.lastName;}<br>
+                            });                           
+                        </div>
+
+                        <div class = "code_block">
+
+                            <h3>Test</h3>
+                            <p>
+                                make a map object containing unique words in the 
+                                textarea as key, the value containing the count
+                            </p>
+                            <textarea rows = "4" cols = "4" id = "text_area_01"></textarea>
+                            <input type="button" value = "count unique" onclick="countUnique()">
+                            <p id = "output_01"></p>
+
+                        </div>
+                        <div class = "code_block">
+
+                            <h3>Test_02</h3>
+                            <p>
+                                register and table and add column function
+                            </p>
+                            <div class = "sample_block">
+                                
+                                <input type = "button" value = "add column" onclick = "createTextInput()">
+
+                                <input type = "text" placeholder="id" id = "test_id">
+                                <input type = "text" placeholder="placeholder" id = "test_placeholder">
+                                <input type = "text" placeholder="label" id = "test_label">
+
+                                
+
+                                <div class = "sample_block" id = "here">
+                                    Columns
+                                </div>
+
+                                <input type = "button" value = "insert info" onclick = "createRow()">
+                                <p id = "dummy">fsdg</p>
+                                <div class = "sample_block" >
+                                    table
+                                    <table id = "test_table">
+                                        <tr id = "test_header">
+
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+                            
+
+
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

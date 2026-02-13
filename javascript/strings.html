@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "../script/myScript.js"></script>
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Intro</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a class="active" href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">  
+
+                    <div class = "content_block">
+                        <h3>JavaScript strings</h3>
+                        <p>
+                            JavaScript strings are for storing and manipulating text.
+                        </p>
+                        <div class = "code_block">
+                            let text = "John Doe";
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>String methods</h3>
+                        <p>
+                            String length<br>
+                            String slice()<br>
+                            String substring()<br>
+                            String substr()<br>
+                            String replace()<br>
+                            String replaceAll()<br>
+                            String toUpperCase()<br>
+                            String toLowerCase()<br>
+                            String concat()<br>
+                            String trim()<br>
+                            String trimStart()<br>
+                            String trimEnd()<br>
+                            String padStart()<br>
+                            String padEnd()<br>
+                            String charAt()<br>
+                            String charCodeAt()<br>
+                            String split()<br>
+                        </p>
+                        <h3>[1] length</h3>
+                        <p>The length property returns the length of a string:</p>
+
+                        <div class = "sample_block">
+                            <p>type any text in the textarea below and click the button to get the length</p>
+                            <textarea id = "text_area_01" rows = "4" cols = "4"></textarea>
+                            <input type= "button" value = "click me" onclick = "getLength()">
+                            <p id = "output_01"></p>
+                        </div>
+                        <h3>[2] slice(start_pos, end_pos)</h3> 
+                        <p>slice() extracts a part of a string and returns the extracted part in a new string.
+                            The method takes 2 parameters: start position, and end position (end not included).</p>
+
+                        <div class = "sample_block">
+                            <p>Extracting a portion of an array</p>
+                            <div class = "code_block">
+                                const originalArray = [1, 2, 3, 4, 5];<br><br>
+
+                                // Extract elements from index 1 (inclusive) to index 4 (exclusive)<br>
+                                const slicedArray = originalArray.slice(1, 4);<br>
+                                console.log(slicedArray); // Output: [2, 3, 4]<br><br>
+
+                                // If no end index is provided, slice will go until the end of the array<br>
+                                const restOfArray = originalArray.slice(2);<br>
+                                console.log(restOfArray); // Output: [3, 4, 5]<br><br>
+                            </div>
+                            <p>Creating a shallow copy of an array</p>
+                            <div class = "code_block">
+                                const originalArray = [1, 2, 3, 4, 5];<br><br>
+
+                                // Create a new array with the same elements as the original<br>
+                                const copyArray = originalArray.slice();<br>
+                                console.log(copyArray); // Output: [1, 2, 3, 4, 5]<br>
+                            </div>
+                            <p>Extracting a portion of a string</p>
+                            <div class = "code_block">
+                                const originalString = "Hello, World!";<br><br>
+
+                                // Extract characters from index 0 (inclusive) to index 5 (exclusive)<br>
+                                const slicedString = originalString.slice(0, 5);<br>
+                                console.log(slicedString); // Output: "Hello"<br><br>
+
+                                // If no end index is provided, slice will go until the end of the string<br>
+                                const restOfString = originalString.slice(7);<br>
+                                console.log(restOfString); // Output: "World!"<br>
+                            </div>
+                            <p>converting string into an array of characters</p>
+                            <div class = "code_block">
+                                const originalString = "Hello";<br><br>
+
+                                // Use slice with no arguments to convert the string into an array of characters<br>
+                                const charArray = originalString.slice();<br>
+                                console.log(charArray); // Output: ["H", "e", "l", "l", "o"]<br>
+                            </div>
+                        </div>
+                        <h3>[3] substring()</h3>
+                        <p>substring() is similar to slice().
+                            The difference is that start and end values less than 0 are treated as 0 in substring().</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let str = "Apple, Banana, Kiwi";<br>
+                                let part = str.substring(7, 13);
+                            </div>
+                        </div>
+                        <h3>[4] substr()</h3>
+                        <p>substr() is similar to slice().
+                            The difference is that the second parameter specifies the length of the extracted part.</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let str = "Apple, Banana, Kiwi";<br>
+                                let part = str.substr(7, 6);
+
+                            </div>
+                        </div>
+                        <h3>[5] replace()</h3>
+                        <p>The replace() method replaces a specified value with another value in a string:
+                            it can accept regular expression.
+                        </p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "Please visit Microsoft!";<br>
+                                let newText = text.replace("Microsoft", "W3Schools");
+                            </div>
+                            <p>regular expression</p>
+                            <div class = "code_block">
+                                let text = "Please visit Microsoft!";<br>
+                                let newText = text.replace(/MICROSOFT/i, "W3Schools");
+                            </div>
+                        </div>
+                        <h3>[6] ReplaceAll()</h3>
+                        <p>In 2021, JavaScript introduced the string method replaceAll()</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                text = text.replaceAll("Cats","Dogs");<br>
+                                text = text.replaceAll("cats","dogs");
+                            </div>
+                            <p>regular expression</p>
+                            <div class = "code_block">
+                                text = text.replaceAll(/Cats/g,"Dogs");<br>
+                                text = text.replaceAll(/cats/g,"dogs");
+                            </div>
+                        </div>
+                        <h3>[7] toUpperCase(), toLowerCase()</h3>
+                        <p>A string is converted to upper case with toUpperCase():
+                            A string is converted to lower case with toLowerCase():</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text1 = "Hello World!";<br>
+                                let text2 = text1.toUpperCase();
+                            </div>
+                            <p>toLowerCase</p>
+                            <div class = "code_block">
+                                let text1 = "Hello World!";       // String<br>
+                                let text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+                            </div>
+                        </div>
+                        <h3>[8] concat() (not recommended to use, use '+' instead)</h3>
+                        <p>concat() joins two or more strings. It is recommended to use plus operator</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text1 = "Hello";<br>
+                                let text2 = "World";<br>
+                                let text3 = text1.concat(" ", text2);
+                            </div>
+                            <p>The concat() method can be used instead of the plus operator. These two lines do the same:</p>
+                            <div class = "code_block">
+                                text = "Hello" + " " + "World!";<br>
+                                text = "Hello".concat(" ", "World!");
+                            </div>
+                        </div>
+                        <h3>[9] trim(), trimStart(), trimEnd()</h3>
+                        <p>The trim() method removes whitespace from both sides of a string</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text1 = "      Hello World!      ";<br>
+                                let text2 = text1.trim();
+                            </div>
+                        </div>
+                        <h3>[10] padStart(), padEnd()</h3>
+                        <p>The padStart() method pads a string from the start.</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "5";<br>
+                                let padded = text.padStart(4,"0");<br>
+                                //output: 0005
+                            </div>
+                        </div>
+                        <h3>[11] split()</h3>
+                        <p>A string can be converted to an array with the split() method</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                text.split(",")    // Split on commas<br>
+                                text.split(" ")    // Split on spaces<br>
+                                text.split("|")    // Split on pipe
+                            </div>
+                        </div>
+                        <h3>[12] charAt(), its better to use text[index]</h3>
+                        <p>The length property returns the length of a string:</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "HELLO WORLD";<br>
+                                let char = text.charAt(0);
+                            </div>
+                        </div>
+                        <h3>[13] charCodeAt()</h3>
+                        <p>The charCodeAt() method returns the unicode of the character at a specified index in a string:
+                            The method returns a UTF-16 code (an integer between 0 and 65535).</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "HELLO WORLD";<br>
+                                let char = text.charCodeAt(0);<br>
+                                //outputs: 72 <br>
+                                //unicode value of capital H
+                            </div>
+                        </div>
+                        <h3>[14] indexOf()</h3>
+                        <p>The indexOf() method returns the index (position) the first occurrence of a string in a string</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "Please locate where 'locate' occurs!";<br>
+                                let index = text.indexOf("locate");<br>
+                                //output: 7
+                            </div>
+                        </div>
+                        <h3>[15] lastIndexOf()</h3>
+                        <p>The lastIndexOf() method returns the index of the last occurrence of a specified text in a string</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "Please locate where 'locate' occurs!";<br>
+                                let index = text.lastIndexOf("locate");<br>
+                                //output: 21
+                            </div>
+                        </div>
+                        <h3>[16] search()</h3>
+                        <p>The search() method searches a string for a string (or a regular expression) and returns the position of the matc</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "Please locate where 'locate' occurs!";<br>
+                                text.search("locate");<br>
+                                //output: 7
+                            </div>
+                            <p>regexp</p>
+                            <div class = "code_block">
+                                let text = "Please locate where 'locate' occurs!";<br>
+                                text.search(/locate/);<br>
+                                //output: 7
+                            </div>
+                        </div>
+                        <h3>[17] match()</h3>
+                        <p>The match() method returns an array containing the results of matching a string against a string (or a regular expression)</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "The rain in SPAIN stays mainly in the plain";<br>
+                                text.match("ain");<br>
+                                //output: 1 ain
+                            </div>
+                            <p>regexp</p>
+                            <div class = "code_block">
+                                let text = "The rain in SPAIN stays mainly in the plain";<br>
+                                text.match(/ain/);<br>
+                                //output: 1 ain
+                            </div>
+                            <p>regexp global</p>
+                            <div class = "code_block">
+                                let text = "The rain in SPAIN stays mainly in the plain";<br>
+                                text.match(/ain/g);<br>
+                                //output: 3 ain ain ain
+                            </div>
+                            <p>regexp global, case insensitive</p>
+                            <div class = "code_block">
+                                let text = "The rain in SPAIN stays mainly in the plain";<br>
+                                text.match(/ain/gi);<br>
+                                //output: 4 ain AIN ain ain 
+                            </div>
+                        </div>
+                        <h3>[18] matchAll()</h3>
+                        <p>The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression)</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "I love cats. Cats are very easy to love. Cats are very popular."<br>
+                                const iterator = text.matchAll("Cats");<br>
+                                //output: Cats, Cats
+                            </div>
+                            <p>regexp, must have g or it will error</p>
+                            <div class = "code_block">
+                                let text = "I love cats. Cats are very easy to love. Cats are very popular."<br>
+                                const iterator = text.matchAll(/Cats/g);<br>
+                                //output: Cats, Cats
+                            </div>
+                            <p>regexp global, case insensitive</p>
+                            <div class = "code_block">
+                                let text = "I love cats. Cats are very easy to love. Cats are very popular."<br>
+                                const iterator = text.matchAll(/Cats/gi);<br>
+                                //output: cats, Cats, Cats
+                            </div>
+                        </div>
+                        <h3>[19] includes()</h3>
+                        <p>The includes() method returns true if a string contains a specified value.
+
+                            Otherwise it returns false</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "Hello world, welcome to the universe.";<br>
+                                text.includes("world");<br>
+                                //output: true
+                            </div>
+                            <div class = "code_block">
+                                let text = "Hello world, welcome to the universe.";<br>
+                                text.includes("world", 12);<br>
+                                //output: false
+                            </div>
+                        </div>
+                        <h3>[20] startsWith(), endsWith()</h3>
+                        <p>The startsWith() method returns true if a string begins with a specified value.</p>
+
+                        <div class = "sample_block">
+                            <div class = "code_block">
+                                let text = "Hello world, welcome to the universe.";<br>
+                                text.startsWith("Hello");<br>
+                                //output: true
+                            </div>
+                            <div class = "code_block">
+                                let text = "Hello world, welcome to the universe.";<br>
+                                text.startsWith("world", 6)<br>
+                                //output: true
+                            </div>
+                            <div class = "code_block">
+                                //Check if the 11 first characters of a string ends with "world":<br>
+                                let text = "Hello world, welcome to the universe.";<br>
+                                text.endsWith("world", 11);<br>
+                                //output: true
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

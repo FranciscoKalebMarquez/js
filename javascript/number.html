@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a class="active" href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>JavaScript Numbers</h3>
+                        <p>
+                            JavaScript has only one type of number. Numbers can be written with or without decimals.
+                        </p>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Numbers are Always 64-bit Floating Point</h3>
+                        <p>
+                            Unlike many other programming languages, JavaScript does not define different types of numbers, <br>
+                            like integers, short, long, floating-point etc.<br>
+                            JavaScript numbers are always stored as double precision floating point numbers, <br>
+                            following the international IEEE 754 standard.
+                        </p>
+                    </div>
+                    <div class = "content_block">
+                        <h3>[1] Integer Precision</h3>
+                        <p> 
+                            Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+                        </p>
+                        <div class = "code_block">
+                            let x = 999999999999999;   // x will be 999999999999999<br>
+                            let y = 9999999999999999;  // y will be 10000000000000000
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Floating Precision</h3>
+                        <p>
+                            Floating point arithmetic is not always 100% accurate:
+                        </p>
+                        <div class = "code_block">
+                            let x = 0.2 + 0.1;<br>
+                            //output: 0.30000000000000004
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Adding Numbers and Strings</h3>
+                        <p>
+                            JavaScript uses the + operator for both addition and concatenation.
+                            Numbers are added. Strings are concatenated.
+                            If you add two numbers, the result will be a number
+                        </p>
+
+                        <div class = "code_block">
+                            let x = 10;<br>
+                            let y = 20;<br>
+                            let z = x + y;<br>
+                            //output: 30, type: number
+                        </div>
+                        If you add two strings, the result will be a string concatenation:
+                        <div class = "code_block">
+                            let x = "10";<br>
+                            let y = "20";<br>
+                            let z = x + y;<br>
+                            //output: "1020" type: string
+                        </div>
+                        If you add a number and a string, the result will be a string concatenation
+                        <div class = "code_block">
+                            let x = 10;<br>
+                            let y = "20";<br>
+                            let z = x + y;<br>
+                            //output: "1020" type: string
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Numeric Strings</h3>
+                        <p>
+                            JavaScript strings can have numeric content. Performing division, multiplication, subtraction
+                            and modulo on numeric string will perform those but addition will result to concatenation.
+                        </p>
+                        <div class = "code_block">
+                            let x = "100";<br>
+                            let y = "10";<br>
+                            let z = x / y;<br>
+                            //output: 10 type: number
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>NaN - Not a Number</h3>
+                        <p>
+                            NaN is a JavaScript reserved word indicating that a number is not a legal number.
+                            Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number)
+                        </p>
+                        <div class = "code_block">
+                            let x = 100 / "Apple";<br>
+                            //output: NaN type: number
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Infinity</h3>
+                        <p>
+                            Infinity (or -Infinity) is the value JavaScript will 
+                            return if you calculate a number outside the largest possible number.
+                        </p>
+                        Division by 0 (zero) also generates Infinity
+                        <div class = "code_block">
+                            let x =  2 / 0;<br>
+                            let y = -2 / 0;<br>
+                            //output: infinity type: number
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Hexadecimal</h3>
+                        <p>
+                            JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+                        </p>
+                        <div class = "code_block">
+                            let x = 0xFF;<br>
+                            //output: 255
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>num.toString(base)</h3>
+                        <p>
+                            By default, JavaScript displays numbers as base 10 decimals.
+                            But you can use the toString() method to output numbers from base 2 to base 36.
+                            Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
+                        </p>
+                        <div class = "code_block">
+                            let myNumber = 32;<br>
+                            myNumber.toString(32);<br>
+                            myNumber.toString(16);<br>
+                            myNumber.toString(12);<br>
+                            myNumber.toString(10);<br>
+                            myNumber.toString(8);<br>
+                            myNumber.toString(2);<br>
+                            //output: Hexatrigesimal (base 36): w<br>
+                            //Duotrigesimal (base 32): 10<br>
+                            //Hexadecimal (base 16): 20<br>
+                            //Duodecimal (base 12): 28<br>
+                            //Decimal (base 10): 32<br>
+                            //Octal (base 8): 40<br>
+                            //Binary (base 2): 100000<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Integer Accuracy</h3>
+                        <p>
+                            JavaScript integers are only accurate up to 15 digits:
+                        </p>
+                        <div class = "code_block">
+                            let x = 999999999999999;<br>
+                            let y = 9999999999999999;<br>
+                            // x = 999999999999999<br>
+                            // y = 10000000000000000
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>How to Create a BigInt</h3>
+                        <p>
+                            To create a BigInt, append n to the end of an integer or call BigInt()
+                        </p>
+                        <div class = "code_block">
+                            let x = 9999999999999999;<br>
+                            let y = BigInt("9999999999999999");<br>
+                            document.getElementById("demo").innerHTML = x + "\n" + y;<br>
+                            //output: <br>
+                            //10000000000000000<br>
+                            //9999999999999999
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>BigInt: A new JavaScript Datatype</h3>
+                        <p>
+                            The JavaScript typeof a BigInt is "bigint"
+                        </p>
+                        <div class = "code_block">
+                            let x = BigInt("9999999999999999");<br>
+                            document.getElementById("demo").innerHTML = typeof x;<br>
+                            //output: bigint
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>BigInt Decimals</h3>
+                        <p>
+                            A BigInt can not have decimals
+                        </p>
+                        <div class = "code_block">
+                            let x = 5n;<br>
+                            let y = x / 2;<br>
+                            // Error: Cannot mix BigInt and other types, use explicit conversion.
+                        </div>
+                        must be converted
+                        <div class = "code_block">
+                            let x = 5n;<br>
+                            let y = Number(x) / 2;<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Minimum and Maximum Safe Integers</h3>
+                        <p>
+                            When a BigInt surpasses the max safe integer and is compared using the === operator,
+                             the result may not be precise due to the limitations of the Number data type.
+                        </p>
+                        <div class = "code_block">
+                            let x = Number.MAX_SAFE_INTEGER;<br>
+                            let y = Number.MIN_SAFE_INTEGER;<br>
+                            //output x = 9007199254740991<br>
+                            // y = -9007199254740991
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Number.isInteger()</h3>
+                        <p>
+                            The Number.isInteger() method returns true if the argument is an integer.
+                        </p>
+                        <div class = "code_block">
+                            Number.isInteger(10);<br>
+                            Number.isInteger(10.5);<br>
+                            //output: true;false
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Number.isSafeInteger()</h3>
+                        <p>
+                            The Number.isSafeInteger() method returns true if the argument is a safe integer
+                        </p>
+                        <div class = "code_block">
+                            Number.isSafeInteger(10);<br>
+                            Number.isSafeInteger(12345678901234567890);<br>
+                            //output: true;false
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Number Methods</h3>
+                        <p>
+                            toString()	Returns a number as a string<br>
+                            toExponential()	Returns a number written in exponential notation<br>
+                            toFixed()	Returns a number written with a number of decimals<br>
+                            toPrecision()	Returns a number written with a specified length<br>
+                            ValueOf()	Returns a number as a number. dont use this<br>
+                        </p>
+                    </div>
+                    <div class = "content_block">
+                        <h3>toExponential()</h3>
+                        <p>
+                            toExponential() returns a string, with a number rounded and written using exponential notation.
+                        </p>
+                        <div class = "code_block">
+                            let x = 9.656;<br>
+                            x.toExponential(2);//9.66e+0<br>
+                            x.toExponential(4);//9.6560e+0<br>
+                            x.toExponential(6);//9.656000e+0<br>
+
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>toFixed()</h3>
+                        <p>
+                            toFixed() returns a string, with the number written with a specified number of decimals:
+                        </p>
+                        <div class = "code_block">
+                            let x = 9.656;<br>
+                            x.toFixed(0);//10<br>
+                            x.toFixed(2);//9.66<br>
+                            x.toFixed(4);//9.6560<br>
+                            x.toFixed(6);//9.656000
+
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>toPrecision()</h3>
+                        <p>
+                            toPrecision() returns a string, with a number written with a specified length
+                        </p>
+                        <div class = "code_block">
+                            let x = 9.656;<br>
+                            x.toPrecision();//9.656<br>
+                            x.toPrecision(2);//9.7<br>
+                            x.toPrecision(4);//9.656<br>
+                            x.toPrecision(6);//9.65600
+
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Number()</h3>
+                        <p>Returns a number converted from its argument.</p>
+                        <div class = "code_block">
+                            Number(true);<br>
+                            Number(false);<br>
+                            Number("10");<br>
+                            Number("  10");<br>
+                            Number("10  ");<br>
+                            Number(" 10  ");<br>
+                            Number("10.33");<br>
+                            Number("10,33");<br>
+                            Number("10 33");<br>
+                            Number("John");<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>parseFloat()</h3>
+                        <p>Parses its argument and returns a floating point number</p>
+                        <div class = "code_block">
+                            parseFloat("10");//10<br>
+                            parseFloat("10.33");//10.33<br>
+                            parseFloat("10 20 30");//10<br>
+                            parseFloat("10 years");//10<br>
+                            parseFloat("years 10");//NaN
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>parseInt()</h3>
+                        <p>Parses its argument and returns a whole number</p>
+                        <div class = "code_block">
+                            parseInt("-10")// -10<br>
+                            parseInt("-10.33")//-10 <br>
+                            parseInt("10") //10<br>
+                            parseInt("10.33") //10<br>
+                            parseInt("10 6")  //10<br>
+                            parseInt("10 years")  //10<br>
+                            parseInt("years 10");  //NaN
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

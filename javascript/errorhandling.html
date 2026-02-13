@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html" class= "active">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>JavaScript try and catch</h3>
+                        <p>
+                            The try statement allows you to define a block of code to be tested for errors while it is being executed.
+
+                            The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+                        </p>
+                        <div class = "code_block">
+                            try {<br>
+                               &nbsp;&nbsp;&nbsp; Block of code to try<br>
+                              }<br>
+                              catch(err) {<br>
+                                &nbsp;&nbsp;&nbsp; Block of code to handle errors<br>
+                              }<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>The throw Statement</h3>
+                        <p>
+                            The throw statement allows you to create a custom error.
+                        </p>
+                        <div class = "code_block">
+                            throw "Too big";    // throw a text<br>
+                            throw 500;          // throw a number                           
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Input Validation Example</h3>
+                        <p>
+                            This example examines input. If the value is wrong, an exception (err) is thrown.
+                        </p>
+                        <div class = "code_block">
+                            function myFunction() {<br>
+                                &nbsp;&nbsp;&nbsp; const message = document.getElementById("p01");<br>
+                                &nbsp;&nbsp;&nbsp; message.innerHTML = "";<br>
+                                &nbsp;&nbsp;&nbsp; let x = document.getElementById("demo").value;<br>
+                                &nbsp;&nbsp;&nbsp; try {<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if(x.trim() == "") throw "empty";<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if(isNaN(x)) throw "not a number";<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; x = Number(x);<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if(x < 5) throw "too low";<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if(x > 10) throw "too high";<br>
+                                    &nbsp;&nbsp;&nbsp; }<br>
+                                    &nbsp;&nbsp;&nbsp; catch(err) {<br>
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; message.innerHTML = "Input is " + err;<br>
+                                        &nbsp;&nbsp;&nbsp; }<br>
+                              }                            
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>HTML Validation</h3>
+                        <p>
+                            The code above is just an example.
+
+                            Modern browsers will often use a combination of 
+                            JavaScript and built-in HTML validation, using predefined validation rules defined in HTML attributes:
+                        </p>
+                        <div class = "code_block">
+                            input id="demo" type="number" min="5" max="10" step="1">"
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>The finally Statement</h3>
+                        <p>
+                            The finally statement lets you execute code, after try and catch, regardless of the result:
+                        </p>
+                        <div class = "code_block">
+                            try {<br>
+                                &nbsp;&nbsp;&nbsp; Block of code to try<br>
+                              }<br>
+                              catch(err) {<br>
+                                &nbsp;&nbsp;&nbsp; Block of code to handle errors<br>
+                              }<br>
+                              finally {<br>
+                                &nbsp;&nbsp;&nbsp; Block of code to be executed regardless of the try / catch result<br>
+                              }
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>The Error Object</h3>
+                        <p>
+                            JavaScript has a built in error object that provides error information when an error occurs.
+                        </p>
+                        Error Object Properties
+                        <table border="1">
+                            <thead>
+                              <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>name</td>
+                                <td>Sets or returns an error name</td>
+                              </tr>
+                              <tr>
+                                <td>message</td>
+                                <td>Sets or returns an error message (a string)</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        Error Name Values
+                        <table border="1">
+                            <thead>
+                              <tr>
+                                <th>Error Name</th>
+                                <th>Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>EvalError</td>
+                                <td>An error has occurred in the eval() function</td>
+                              </tr>
+                              <tr>
+                                <td>RangeError</td>
+                                <td>A number "out of range" has occurred</td>
+                              </tr>
+                              <tr>
+                                <td>ReferenceError</td>
+                                <td>An illegal reference has occurred</td>
+                              </tr>
+                              <tr>
+                                <td>SyntaxError</td>
+                                <td>A syntax error has occurred</td>
+                              </tr>
+                              <tr>
+                                <td>TypeError</td>
+                                <td>A type error has occurred</td>
+                              </tr>
+                              <tr>
+                                <td>URIError</td>
+                                <td>An error in encodeURI() has occurred</td>
+                              </tr>
+                            </tbody>
+                          </table>                         
+
+                    </div>
+                    <div class = "content_block">
+                        <h3>Eval Error</h3>
+                        <p>
+                            An EvalError indicates an error in the eval() function.
+                        </p>
+
+                    </div>
+                    <div class = "content_block">
+                        <h3>Range Error</h3>
+                        <p>
+                            A RangeError is thrown if you use a number that is outside the range of legal values.
+
+                            For example: You cannot set the number of significant digits of a number to 500.
+                        </p>
+                        <div class = "code_block">
+                            let num = 1;<br>
+                            try {<br>
+                                &nbsp;&nbsp;&nbsp;  num.toPrecision(500);   // A number cannot have 500 significant digits<br>
+                            }<br>
+                            catch(err) {<br>
+                                &nbsp;&nbsp;&nbsp;  document.getElementById("demo").innerHTML = err.name;<br>
+                            }          <br>                 
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Reference Error</h3>
+                        <p>
+                            A ReferenceError is thrown if you use (reference) a variable that has not been declared
+                        </p>
+                        <div class = "code_block">
+                            let x = 5;<br> 
+                            try {<br> 
+                                &nbsp;&nbsp;&nbsp;  x = y + 1;   // y cannot be used (referenced)<br> 
+                            }<br> 
+                            catch(err) {<br> 
+                                &nbsp;&nbsp;&nbsp;  document.getElementById("demo").innerHTML = err.name;<br> 
+                            }                           
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Syntax Error</h3>
+                        <p>
+                            A SyntaxError is thrown if you try to evaluate code with a syntax error.
+                        </p>
+                        <div class = "code_block">
+                            try {<br> 
+                                &nbsp;&nbsp;&nbsp;  eval("alert('Hello)");   // Missing ' will produce an error<br> 
+                              }<br> 
+                              catch(err) {<br> 
+                                &nbsp;&nbsp;&nbsp;  document.getElementById("demo").innerHTML = err.name;<br> 
+                              }
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Type Error</h3>
+                        <p>
+                            A TypeError is thrown if you use a value that is outside the range of expected types
+                        </p>
+                        <div class = "code_block">
+                            let num = 1;<br> 
+                            try {<br> 
+                                &nbsp;&nbsp;&nbsp; num.toUpperCase();   // You cannot convert a number to upper case<br> 
+                            }<br> 
+                            catch(err) {<br> 
+                                &nbsp;&nbsp;&nbsp; document.getElementById("demo").innerHTML = err.name;<br> 
+                            }                            
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>URI (Uniform Resource Identifier) Error</h3>
+                        <p>
+
+                        </p>
+                        <div class = "code_block">
+                            try {<br> 
+                                &nbsp;&nbsp;&nbsp;  decodeURI("%%%");   // You cannot URI decode percent signs<br> 
+                              }<br> 
+                              catch(err) {<br> 
+                                &nbsp;&nbsp;&nbsp;  document.getElementById("demo").innerHTML = err.name;<br> 
+                              }
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

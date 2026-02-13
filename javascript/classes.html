@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html" class = "active">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>JavaScript Class Syntax</h3>
+                        <p>
+
+                        </p>
+                        <div class = "code_block">
+                            class Car {<br>
+                                constructor(name, year) {<br>
+                                  this.name = name;<br>
+                                  this.year = year;<br>
+                                }<br>
+                              }
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Creating class objects</h3>
+                        <p>
+
+                        </p>
+                        <div class = "code_block">
+                            const myCar1 = new Car("Ford", 2014);<br>
+                            const myCar2 = new Car("Audi", 2019);                            
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Class Methods</h3>
+                        <p>
+
+                        </p>
+                        <div class = "code_block">
+                            class Car {<br>
+                                &nbsp;&nbsp;&nbsp;  constructor(name, year) {<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.name = name;<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.year = year;<br>
+                                    &nbsp;&nbsp;&nbsp; }<br>
+                                    &nbsp;&nbsp;&nbsp;  age() {<br>
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  const date = new Date();<br>
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  return date.getFullYear() - this.year;<br>
+                                        &nbsp;&nbsp;&nbsp;  }<br>
+                              }<br><br>
+                              
+                              const myCar = new Car("Ford", 2014);<br>
+                              document.getElementById("demo").innerHTML =
+                              "My car is " + myCar.age() + " years old.";                           
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Class Inheritance</h3>
+                        <p>
+                            The super() method refers to the parent class.
+
+                            By calling the super() method in the constructor method, 
+                            we call the parent's constructor method and gets access to the parent's properties and methods.                           
+                        </p>
+                        <div class = "code_block">
+                            class Car {<br>
+                                &nbsp;&nbsp;&nbsp;  constructor(brand) {<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.carname = brand;<br>
+                                    &nbsp;&nbsp;&nbsp;  }<br>
+                                    &nbsp;&nbsp;&nbsp;  present() {<br>
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  return 'I have a ' + this.carname;<br>
+                                        &nbsp;&nbsp;&nbsp;  }<br>
+                              }<br><br>
+                              
+                              class Model extends Car {<br>
+                                &nbsp;&nbsp;&nbsp;  constructor(brand, mod) {<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  super(brand);<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.model = mod;<br>
+                                    &nbsp;&nbsp;&nbsp;  }<br>
+                                    &nbsp;&nbsp;&nbsp;  show() {<br>
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  return this.present() + ', it is a ' + this.model;<br>
+                                        &nbsp;&nbsp;&nbsp;  }<br>
+                              }<br><br>
+                              
+                              let myCar = new Model("Ford", "Mustang");<br>
+                              document.getElementById("demo").innerHTML = myCar.show();                           
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Getters and Setters</h3>
+                        <p>
+
+                        </p>
+                        <div class = "code_block">
+                            class Car {<br>
+                                &nbsp;&nbsp;&nbsp;  constructor(brand) {<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.carname = brand;<br>
+                                    &nbsp;&nbsp;&nbsp;  }<br>
+                                    &nbsp;&nbsp;&nbsp;  get cnam() {<br>
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  return this.carname;<br>
+                                        &nbsp;&nbsp;&nbsp;  }<br>
+                                        &nbsp;&nbsp;&nbsp;  set cnam(x) {<br>
+                                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.carname = x;<br>
+                                            &nbsp;&nbsp;&nbsp;  }<br>
+                              }<br><br>
+                              
+                              const myCar = new Car("Ford");<br><br>
+                              
+                              document.getElementById("demo").innerHTML = myCar.cnam; <br><br>                           
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Hoisting</h3>
+                        <p>
+                            Unlike functions, and other JavaScript declarations, class declarations are not hoisted.
+
+                            That means that you must declare a class before you can use it:
+                        </p>
+                        <div class = "code_block">
+                            //You cannot use the class yet.<br> 
+                            //myCar = new Car("Ford") will raise an error.<br> <br> 
+                            
+                            class Car {<br> 
+                                &nbsp;&nbsp;&nbsp;  constructor(brand) {<br> 
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; this.carname = brand;<br> 
+                                    &nbsp;&nbsp;&nbsp; }<br> 
+                            }<br> <br> 
+                            
+                            //Now you can use the class:<br> 
+                            const myCar = new Car("Ford")   <br>                         
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Static Methods</h3>
+                        <p>
+                            Static class methods are defined on the class itself.
+
+                            You cannot call a static method on an object, only on an object class.
+                        </p>
+                        <div class = "code_block">
+                            class Car {<br>
+                                &nbsp;&nbsp;&nbsp;  constructor(name) {<br>
+                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  this.name = name;<br>
+                                    &nbsp;&nbsp;&nbsp;  }<br>
+                                    &nbsp;&nbsp;&nbsp;  static hello() {<br>
+                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  return "Hello!!";<br>
+                                        &nbsp;&nbsp;&nbsp;  }<br>
+                              }<br><br>
+                              
+                              const myCar = new Car("Ford");<br><br>
+                              
+                              // You can call 'hello()' on the Car Class:<br>
+                              document.getElementById("demo").innerHTML = Car.hello();<br><br>
+                              
+                              // But NOT on a Car Object:<br>
+                              // document.getElementById("demo").innerHTML = myCar.hello();<br>
+                              // this will raise an error.       <br>                   
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

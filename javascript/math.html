@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a class="active" href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>JavaScript Math Object</h3>
+                        <p>
+                            The JavaScript Math object allows you to perform mathematical tasks on numbers.
+                        </p>
+
+                        <div class = "code_block">
+                            document.getElementById("demo").innerHTML = Math.PI;<br>
+                            // 3.141592653589793
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math Properties (Constants)</h3>
+                        <p>
+                            The syntax for any Math property is : Math.property.
+                            JavaScript provides 8 mathematical constants that can be accessed as Math properties
+                        </p>
+
+                        <div class = "code_block">
+                            Math.E        // returns Euler's number<br>
+                            Math.PI       // returns PI<br>
+                            Math.SQRT2    // returns the square root of 2<br>
+                            Math.SQRT1_2  // returns the square root of 1/2<br>
+                            Math.LN2      // returns the natural logarithm of 2<br>
+                            Math.LN10     // returns the natural logarithm of 10<br>
+                            Math.LOG2E    // returns base 2 logarithm of E<br>
+                            Math.LOG10E   // returns base 10 logarithm of E     <br>                       
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math Methods</h3>
+                        <p>
+                            The syntax for Math any methods is : Math.method(number)<br>  
+                            Math.round(x)	Returns x rounded to its nearest integer<br>  
+                            Math.ceil(x)	Returns x rounded up to its nearest integer<br>  
+                            Math.floor(x)	Returns x rounded down to its nearest integer<br>  
+                            Math.trunc(x)	Returns the integer part of x (new in ES6)
+                        </p>
+
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.round()</h3>
+                        <p>
+                            Math.round(x) returns the nearest INTEGER
+                        </p>
+
+                        <div class = "code_block">
+                            Math.round(4.5);<br>
+                            // 5
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.ceil()</h3>
+                        <p>
+                            Math.ceil(x) returns the value of x rounded up to its nearest integer
+                        </p>
+
+                        <div class = "code_block">
+                            Math.ceil(4.4)<br>
+                            // 5
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.floor()</h3>
+                        <p>
+                            Math.floor(x) returns the value of x rounded down to its nearest integer
+                        </p>
+
+                        <div class = "code_block">
+                            Math.floor(4.9);<br>
+                            // 4
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.trunc()</h3>
+                        <p>
+                            Math.trunc(x) returns the integer part of x
+                        </p>
+
+                        <div class = "code_block">
+                            Math.trunc(4.9);<br>
+                            // 4 
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.sign()</h3>
+                        <p>
+                            Math.sign(x) returns if x is negative, null or positive 1, 0, -1
+                        </p>
+
+                        <div class = "code_block">
+                            Math.sign(-4); // 1<br>
+                            Math.sign(0); // 0<br>
+                            Math.sign(4); // -1                          
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.pow()</h3>
+                        <p>
+                            Math.pow(x, y) returns the value of x to the power of y
+                        </p>
+
+                        <div class = "code_block">
+                            Math.pow(8, 2);<br>
+                            // 64
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.sqrt()</h3>
+                        <p>
+                            Math.sqrt(x) returns the square root of x
+                        </p>
+
+                        <div class = "code_block">
+                            Math.sqrt(64);<br>
+                            // 8
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.abs()</h3>
+                        <p>
+                            Math.abs(x) returns the absolute (positive) value of x
+                        </p>
+
+                        <div class = "code_block">
+                            Math.abs(-4.7);<br>
+                            // 4.7
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.sin()</h3>
+                        <p>
+                            Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians).
+
+                            If you want to use degrees instead of radians, you have to convert degrees to radians:
+                            
+                            Angle in radians = Angle in degrees x PI / 180.
+                        </p>
+
+                        <div class = "code_block">
+                            Math.sin(90 * Math.PI / 180);     // returns 1 (the sine of 90 degrees)
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.cos()</h3>
+                        <p>
+                            Math.cos(x) returns the cosine (a value between -1 and 1) of the angle x (given in radians).
+
+                            If you want to use degrees instead of radians, you have to convert degrees to radians:
+                            
+                            Angle in radians = Angle in degrees x PI / 180.
+                        </p>
+
+                        <div class = "code_block">
+                            Math.cos(0 * Math.PI / 180);     // returns 1 (the cos of 0 degrees)
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.min() and Math.max()</h3>
+                        <p>
+                            Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments
+                        </p>
+
+                        <div class = "code_block">
+                            Math.min(0, 150, 30, 20, -8, -200);<br>
+                            // -200
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.random()</h3>
+                        <p>
+                            Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+                        </p>
+
+                        <div class = "code_block">
+                            Math.random();
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.log()</h3>
+                        <p>
+                            Math.log(x) returns the natural logarithm of x.
+
+                            The natural logarithm returns the time needed to reach a certain level of growth<br>
+                            How many times must we multiply Math.E to get 10?
+                        </p>
+
+                        <div class = "code_block">
+                            Math.log(10);<br>
+                            // 2.302585092994046
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.log2()</h3>
+                        <p>
+                            Math.log2(x) returns the base 2 logarithm of x.<br>
+                            How many times must we multiply 2 to get 8?
+                        </p>
+
+                        <div class = "code_block">
+                            Math.log2(8);<br>
+                            // 3
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.log10()</h3>
+                        <p>
+                            Math.log10(x) returns the base 10 logarithm of x.<br>
+                            How many times must we multiply 10 to get 1000?
+                        </p>
+
+                        <div class = "code_block">
+                            Math.log10(1000);<br>
+                            // 3
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

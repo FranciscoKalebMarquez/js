@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+    
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html" class ="active" id = "o_loop">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>Different Kinds of Loops</h3>
+                        <p>
+                            for - loops through a block of code a number of times<br>
+                            for/in - loops through the properties of an object<br>
+                            for/of - loops through the values of an iterable object<br>
+                            while - loops through a block of code while a specified condition is true<br>
+                            do/while - also loops through a block of code while a specified condition is true<br>
+                        </p>
+                        <div class = "code_block">
+
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>For Loop</h3>
+                        <p>
+                            The for statement creates a loop with 3 optional expressions
+                        </p>
+                        <div class = "code_block">
+                            for (let i = 0; i < 5; i++) {<br>
+                            &nbsp;&nbsp;&nbsp;text += "The number is " + i + "br";<br>
+                            }
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>For In Loop</h3>
+                        <p>
+                            The JavaScript for in statement loops through the properties of an Object
+                        </p>
+                        <div class = "code_block">
+                            const person = {fname:"John", lname:"Doe", age:25};<br><br>
+
+                            let text = "";<br>
+                            for (let x in person) {<br>
+                                &nbsp;&nbsp;&nbsp;text += person[x];<br>
+                            }               <br>  
+                            // x = John Doe 25 
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>For In Over Arrays</h3>
+                        <p>
+
+                        </p>
+                        <div class = "code_block">
+                            const numbers = [45, 4, 9, 16, 25];<br><br>
+
+                            let txt = "";<br>
+                            for (let x in numbers) {<br>
+                                &nbsp;&nbsp;&nbsp;txt += numbers[x] + "br"; <br>
+                            }<br><br>
+                            
+                            document.getElementById("demo").innerHTML = txt;   <br>    
+                            //45<br> 
+                            //4<br> 
+                            //9<br> 
+                            //16<br> 
+                            //25  <br>                   
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>For Of Loop</h3>
+                        <p>
+                            The JavaScript for of statement loops through the values of an iterable object.
+
+                            It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+                        </p>
+                        <div class = "code_block">
+                            const cars = ["BMW", "Volvo", "Mini"];<br><br>
+
+                            let text = "";<br>
+                            for (let x of cars) {<br>
+                                &nbsp;&nbsp;&nbsp;text += x;<br>
+                            }            <br>     
+                        </div>
+                        looping over a string
+                        <div class = "code_block">
+                            let language = "JavaScript";<br>  <br>  
+
+                            let text = "";<br>  
+                            for (let x of language) {<br>  
+                                &nbsp;&nbsp;&nbsp;text += x;<br>  
+                            }                                          
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>While Loop</h3>
+                        <p>
+                            The while loop loops through a block of code as long as a specified condition is true.
+                        </p>
+                        <div class = "code_block">
+                            while (i < 10) {<br>
+                                &nbsp;&nbsp;&nbsp;text += "The number is " + i;<br>
+                                &nbsp;&nbsp;&nbsp;i++;<br>
+                              }   <br>                         
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Do While Loop</h3>
+                        <p>
+                            The do while loop is a variant of the while loop. This loop will execute the code block once, 
+                            before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+                        </p>
+                        <div class = "code_block">
+                            do {<br>
+                                &nbsp;&nbsp;&nbsp;text += "The number is " + i;<br>
+                                &nbsp;&nbsp;&nbsp;i++;<br>
+                              }<br>
+                              while (i < 10);<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Break Statement</h3>
+                        <p>
+                            The break statement can be used to jump out of a loop
+                        </p>
+                        <div class = "code_block">
+                            for (let i = 0; i < 10; i++) {<br>
+                                &nbsp;&nbsp;&nbsp;if (i === 3) { break; }<br>
+                                &nbsp;&nbsp;&nbsp;text += "The number is " + i + "br";<br>
+                              }<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Continue Statement</h3>
+                        <p>
+                            This example skips the value of 3
+                        </p>
+                        <div class = "code_block">
+                            for (let i = 0; i < 10; i++) {<br>
+                                &nbsp;&nbsp;&nbsp;if (i === 3) { continue; }<br>
+                                &nbsp;&nbsp;&nbsp;text += "The number is " + i + "br";<br>
+                              }<br>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

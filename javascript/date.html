@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a class="active" href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>JavaScript date object</h3>
+                        <p>
+                            By default, JavaScript will use the browser's time zone and display a date as a full text string
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date();<br>
+                            // d = Tue Jul 25 2023 14:17:57 GMT+0800 (Singapore Standard Time)<br>
+                            const d = new Date("2022-03-25");<br>
+                            // d = Fri Mar 25 2022 08:00:00 GMT+0800 (Singapore Standard Time)                                                  
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Creating Date Objects</h3>
+                        <p>
+                            Date objects are created with the new Date() constructor.
+
+                            There are 9 ways to create a new date object:
+                        </p>
+
+                        <div class = "code_block">
+                            new Date()<br>
+                            new Date(date string)<br><br>
+                            
+                            new Date(year,month)<br>
+                            new Date(year,month,day)<br>
+                            new Date(year,month,day,hours)<br>
+                            new Date(year,month,day,hours,minutes)<br>
+                            new Date(year,month,day,hours,minutes,seconds)<br>
+                            new Date(year,month,day,hours,minutes,seconds,ms)<br><br>
+                            
+                            new Date(milliseconds)                            
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript new Date()</h3>
+                        <p>
+                            new Date() creates a date object with the current date and time
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date();  
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>new Date(date string)</h3>
+                        <p>
+                            new Date(date string) creates a date object from the specified date string
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date("October 13, 2014 11:13:00");<br>
+                            const d2 = new Date("2022-03-25");
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>new Date(year, month, ...)</h3>
+                        <p>
+                            new Date(year, month, ...) creates a date object with a specified date and time.
+                            in terms of month, January is 0 and December is 11
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date(2018, 11, 24, 10, 33, 30, 0);<br>
+                            //Mon Dec 24 2018 10:33:30 GMT+0800 (Singapore Standard Time)
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Previous Century</h3>
+                        <p>
+                            One and two digit years will be interpreted as 19xx
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date(99, 11, 24);<br>
+                            //December 24, 1999
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>new Date(milliseconds)</h3>
+                        <p>
+                            new Date(milliseconds) creates a new date object as milliseconds plus zero time
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date(100000000000);<br>
+                            //100000000000 milliseconds from January 01 1970 UTC is:<br>
+                            //Sat Mar 03 1973 17:16:40 GMT+0730 (Singapore Standard Time)
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Displaying Dates</h3>
+                        <p>
+                            JavaScript will (by default) output dates using the toString() method. This is a string 
+                            representation of the date, including the time zone. The format is specified in the ECMAScript specification
+                        </p>
+
+                        <div class = "code_block">
+                            //Tue Jul 25 2023 13:13:52 GMT+0800 (Singapore Standard Time)
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>toDateString()</h3>
+                        <p>
+                            The toDateString() method converts a date to a more readable format
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date();<br>
+                            d.toDateString();     <br>
+                            //Tue Jul 25 2023                       
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>toUTCString()</h3>
+                        <p>
+                            The toUTCString() method converts a date to a string using the UTC standard
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date();<br>
+                            d.toUTCString();<br>
+                            //Tue, 25 Jul 2023 06:38:59 GMT
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>toISOString()</h3>
+                        <p>
+                            The toISOString() method converts a date to a string using the ISO standard
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date();<br>
+                            d.toISOString();<br>
+                            //2023-07-25T06:39:37.014Z                            
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Date Formats</h3>
+                        <p>
+                            ISO Date	"2015-03-25" (The International Standard)<br>
+                            Short Date	"03/25/2015"<br>
+                            Long Date	"Mar 25 2015" or "25 Mar 2015"
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date("2015-03-25");<br>
+                            //Wed Mar 25 2015 08:00:00 GMT+0800 (Singapore Standard Time)<br><br>
+                            const d = new Date("03/25/2015");<br>
+                            //Wed Mar 25 2015 00:00:00 GMT+0800 (Singapore Standard Time)<br><br>
+                            const d = new Date("Mar 25 2015");<br>
+                            //Wed Mar 25 2015 00:00:00 GMT+0800 (Singapore Standard Time)
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Parsing Dates</h3>
+                        <p>
+                            If you have a valid date string, you can use the Date.parse() method to convert it to milliseconds.
+
+                            Date.parse() returns the number of milliseconds between the date and January 1, 1970
+                        </p>
+
+                        <div class = "code_block">
+                            const msec = Date.parse("March 21, 2012");<br>
+                            //1332259200000
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Date Get Methods</h3>
+                        <p>
+                            getFullYear()	Get year as a four digit number (yyyy)<br>
+                            getMonth()	Get month as a number (0-11)<br>
+                            getDate()	Get day as a number (1-31)<br>
+                            getDay()	Get weekday as a number (0-6)<br>
+                            getHours()	Get hour (0-23)<br>
+                            getMinutes()	Get minute (0-59)<br>
+                            getSeconds()	Get second (0-59)<br>
+                            getMilliseconds()	Get millisecond (0-999)<br>
+                            getTime()	Get time (milliseconds since January 1, 1970)
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date();<br>
+                            d.getFullYear() // <br>
+                            d.getMonth() // <br>
+                            d.getDate() // <br>
+                            d.getDay() // <br>
+                            d.getHours() //  <br>
+                            d.getMinutes() //<br>
+                            d.getSeconds() //<br>
+                            d.getMilliseconds() //<br>
+                            d.getTime() //<br>
+
+                            
+                        </div>
+                        <p id = "date_01">-------</p>
+                        <p id = "date_02">click button to get date</p>
+                        <input type = "button" value="click me to get date" onclick = "getDateNow()">
+                        
+                    </div>
+                    <div class = "content_block">
+                        <h3>Set Date Methods</h3>
+                        <p>
+                            setDate()	Set the day as a number (1-31)<br>
+                            setFullYear()	Set the year (optionally month and day)<br>
+                            setHours()	Set the hour (0-23)<br>
+                            setMilliseconds()	Set the milliseconds (0-999)<br>
+                            setMinutes()	Set the minutes (0-59)<br>
+                            setMonth()	Set the month (0-11)<br>
+                            setSeconds()	Set the seconds (0-59)<br>
+                            setTime()	Set the time (milliseconds since January 1, 1970)<br>
+                        </p>
+
+                        <div class = "code_block">
+                            const d = new Date();<br>
+                            d.setMonth(11);<br>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

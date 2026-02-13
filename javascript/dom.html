@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a  href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html" class = "active">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>Finding HTML Elements</h3>
+                        <p></p>
+                        <table>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>document.getElementById(id)</td>
+                                <td>Find an element by element id</td>
+                            </tr>
+                            <tr>
+                                <td>document.getElementsByTagName(name)</td>
+                                <td>find elements by tag name</td>
+                            </tr>
+                            <tr>
+                                <td>document.getElementsByClassName(name)</td>
+                                <td>find elements by class name</td>
+                            </tr>
+                        </table>
+                        <div class = "code_block">
+                            function changeP1(){<br>
+                                &nbsp;   let element = document.getElementById("p1");<br>
+                                &nbsp;   element.innerHTML = "youre wonderful";<br>
+                            }<br><br>
+                            
+                            function changeP2(){<br>
+                                &nbsp;   let element = document.getElementById("p2");<br>
+                                &nbsp;   element.innerHTML = "you're doing great";<br>
+                            }<br><br>
+                            
+                            function changeSampleP(){<br>
+                                &nbsp;   let elements = document.getElementsByClassName("sample_p");<br>
+                                &nbsp;   for(let i = 0; i < elements.length; i++){<br>
+                                    &nbsp;  &nbsp;      elements[i].innerHTML = "frogs are cool";<br>
+                                    &nbsp;       }<br>
+                            }<br><br>
+                            
+                            function resetP(){<br>
+                                &nbsp;   let elements = document.getElementsByClassName("sample_p");<br>
+                                &nbsp;   let arr = ["id = p1; class = sample_p", "id = p2; class = sample_p", "id = p3; class = sample_p"];<br>
+                                &nbsp;   for(let i = 0; i < elements.length; i++){<br>
+                                    &nbsp; &nbsp;       elements[i].innerHTML = arr[i];<br>
+                                    &nbsp;       }<br>
+                            }                            
+                        </div>
+
+                        <p id = "p1" class = "sample_p">id = p1; class = sample_p</p>
+                        <p id = "p2" class = "sample_p">id = p2; class = sample_p</p>
+                        <p id = "p3" class = "sample_p">id = p3; class = sample_p</p> 
+
+                        <div class = "content_block2">
+                            <input type = "button" value = "change p1" onclick = "changeP1()"> 
+                            <input type = "button" value = "change p2" onclick = "changeP2()"> 
+                            <input type = "button" value = "change sample_p" onclick = "changeSampleP()">
+                            <input type = "button" value = "reset" onclick = "resetP()">
+                        </div>
+                        
+                    </div>
+                    <div class = "content_block">
+                        <h3>Changing HTML Elements</h3>
+                        <p></p>
+                        <table>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>element.innerHTML =  new html content</td>
+                                <td>Change the inner HTML of an element</td>
+                            </tr>
+                            <tr>
+                                <td>element.attribute = new value</td>
+                                <td>Change the attribute value of an HTML element</td>
+                            </tr>
+                            <tr>
+                                <td>element.style.property = new style</td>
+                                <td>Change the style of an HTML element</td>
+                            </tr>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>element.setAttribute(attribute, value)</td>
+                                <td>Change the attribute value of an HTML element</td>
+                            </tr>
+                        </table>
+                        <div class = "code_block">
+                            function changeInnerHTML(){<br>
+                                &nbsp;let element = document.getElementById("sample_block_001");<br>
+                                &nbsp;element.innerHTML = "new innerHTML"<br>
+                            }<br><br>
+                            
+                            function changeBorderColor(){<br>
+                                &nbsp;let element = document.getElementById("sample_block_001");<br>
+                                &nbsp;element.style.borderColor = "red";<br>
+                            }<br><br>
+                            
+                            function changeFontFamily(){<br>
+                                &nbsp;let element = document.getElementById("sample_block_001");<br>
+                                &nbsp;element.style.fontFamily = "Century Gothic"<br>
+                            }<br><br>
+                            
+                            function resetDiv(){<br>
+                                &nbsp;let element = document.getElementById("sample_block_001");<br>
+                                &nbsp;element.innerHTML = "some text";<br>
+                                &nbsp;element.style.borderColor = "black";<br>
+                                &nbsp;element.style.fontFamily = "Arial"<br>
+                            }                                      
+                        </div>
+
+                        <div class = "sample_block" id = "sample_block_001">
+                            text inside div
+                        </div>
+                        <div class = "content_block2">
+                            <input type = "button" value = "change inner HTML" onclick = "changeInnerHTML()"> 
+                            <input type = "button" value = "change border color" onclick = "changeBorderColor()"> 
+                            <input type = "button" value = "change font family" onclick = "changeFontFamily()">
+                            <input type = "button" value = "reset" onclick = "resetDiv()">
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Adding and Deleting Elements</h3>
+                        <p></p>
+                        <table>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>document.createElement(element)</td>
+                                <td>Create an HTML element</td>
+                            </tr>
+                            <tr>
+                                <td>document.removeChild(element)</td>
+                                <td>Remove an HTML element</td>
+                            </tr>
+                            <tr>
+                                <td>document.appendChild(element)</td>
+                                <td>Add an HTML element</td>
+                            </tr>
+                            <tr>
+                                <td>document.replaceChild(new, old)</td>
+                                <td>Replace an HTML element</td>
+                            </tr>
+                            <tr>
+                                <td>document.write(text)</td>
+                                <td>Write into the HTML output stream</td>
+                            </tr>
+                        </table>
+                        <div class = "code_block">
+                                      
+                        </div>
+                        <div class = "sample_block" id = "sample_block_002">
+                            text inside div
+                        </div>
+                        
+                        <div class = "content_block2"><!--put an onclick method where the clicked element's id would be saved for deletion or replace-->
+                            <input type = "button" value = "insert a shape" onclick = "changeInnerHTML()"> 
+                            <input type = "button" value = "remove shape" onclick = "changeBorderColor()"> 
+                            <input type = "button" value = "replace shape" onclick = "changeFontFamily()">
+                            <input type = "button" value = "insert text on shape" onclick = "resetDiv()">
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Adding Events Handlers</h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Form Validation</h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Validate Numeric Input</h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Automatic HTML Form Validation</h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Changing HTML Style</h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Animation</h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Events</h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div> 
+                    </div>
+                    <div class = "content_block">
+                        <h3></h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3></h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3></h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3></h3>
+                        <p></p>
+                        <div class = "code_block">
+                                      
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

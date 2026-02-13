@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/myStyle2.css">
+    <script src = "../script/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div id = "header">
+
+        <ul id = "left_ul">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">html</a></li>
+            <li><a href="#news">css</a></li>
+            <li><a href="JavascriptInto.html">Javascript</a></li>
+            <li><a href="#about">php</a></li>
+            <li><a href="#about">sql</a></li>
+            <li><a href="#about">bootstrap</a></li>
+            <li><a href="#about">react</a></li>
+            <li><a href="#about">nodeJS</a></li>
+
+          </ul>
+
+          <ul id = "right_ul">
+
+            <li><a href="#home">Log In</a></li>
+            <li><a href="#news">Register</a></li>
+            
+          </ul>
+
+    </div>
+
+    <div id = "left_panel">
+
+        <div class="left-column" id = "vertical-menu">
+            <a  href="JavascriptInto.html">Javascript Into</a>
+            <a  href="Variables.html">Variables and Scope</a>
+            <a  href="datatypes.html">Data Types</a>
+            <a  href="functions.html">Functions</a>
+            <a  href="events.html">Events</a>
+            <a  href="strings.html">Strings</a>
+            <a  href="number.html">Number</a>
+            <a class="active" href="array.html">Array</a>
+            <a  href="date.html">Date</a>
+            <a  href="math.html">Math</a>
+            <a  href="random.html">Random</a>
+            <a  href="ifelse.html">If Else, Switch</a>
+            <a  href="loops.html">Loops</a>
+            <a  href="objects.html">Object, Sets, Maps</a>
+            <a  href="conversions.html">Type Conversion</a>
+            <a  href="regexp.html">RegExp</a>
+            <a  href="errorhandling.html">Error Handling</a>
+            <a  href="arrowfunctions.html">Arrow Function</a>
+            <a  href="classes.html">classes</a>
+            <a  href="modules.html">Modules</a>
+            <a  href="json.html">JSON</a>
+            <a  href="dom.html">DOM</a>
+            <a  href="bom.html">BOM</a>
+            <a  href="api.html">API</a>
+            <a  href="ajax.html">AJAX</a>
+            <a  href="jquery.html">JQuery</a>
+            <a  href="graphics.html">Graphics</a>
+            <a  href="practices.html">Best practices and mistakes</a>
+          </div>
+
+    </div>
+
+    <div id = "flex_layer_01">
+
+        <div id="flex_layer_02">
+
+            <div id = "flex_layer_03">  
+
+                <div id = "flex_layer_04">
+
+                    <div class = "content_block">
+                        <h3>JavaScript Arrays</h3>
+                        <p>An array is a special variable, which can hold more than one value:
+                            It is a common practice to declare arrays with the const keyword.
+                        </p>
+                        <div class = "code_block">
+                            const cars = ["Saab", "Volvo", "BMW"];
+                        </div>
+                        <div class = "code_block">
+                            const cars = [];<br>
+                            cars[0]= "Saab";<br>
+                            cars[1]= "Volvo";<br>
+                            cars[2]= "BMW";
+                        </div>
+                        An array declared with const cannot be reassigned, you cannot change the whole array,
+                        only elements using direct element access.
+                        <div class = "code_block">
+                            const cars = ["Saab", "Volvo", "BMW"];<br>
+                            cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+                        </div>
+                        <div class = "code_block">
+                            // You can create a constant array:<br>
+                            const cars = ["Saab", "Volvo", "BMW"];<br><br>
+
+                            // You can change an element:<br>
+                            cars[0] = "Toyota";<br><br>
+
+                            // You can add an element:<br>
+                            cars.push("Audi");
+                        </div>
+                        redeclaring array with var
+                        <div class = "code_block">
+                            var cars = ["Volvo", "BMW"];   // Allowed<br>
+                            var cars = ["Toyota", "BMW"];  // Allowed<br>
+                            cars = ["Volvo", "Saab"];      // Allowed
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Using the JavaScript Keyword new</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            const cars = new Array("Saab", "Volvo", "BMW");
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Accessing Array Elements</h3>
+                        <p>You access an array element by referring to the index number</p>
+                        <div class = "code_block">
+                            const cars = ["Saab", "Volvo", "BMW"];<br>
+                            let car = cars[0];
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Changing an Array Element</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            const cars = ["Saab", "Volvo", "BMW"];<br>
+                            cars[0] = "Opel";
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Array to a String</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            document.getElementById("demo").innerHTML = fruits.toString();<br>
+                            //output: Banana,Orange,Apple,Mango
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Access the Full Array DOM</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            const cars = ["Saab", "Volvo", "BMW"];<br>
+                            document.getElementById("demo").innerHTML = cars;
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Arrays are Objects</h3>
+                        <p>Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.</p>
+                        <div class = "code_block">
+                            const person = ["John", "Doe", 46];<br>
+                            document.getElementById("demo").innerHTML = typeof person; // type: object
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>length</h3>
+                        <p>The length property of an array returns the length of an array (the number of array elements)</p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            let length = fruits.length;<br>
+                            //length: 4
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Looping Array Elements</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            let fLen = fruits.length;<br><br>
+
+                            let text = "ul";<br>
+                            for (let i = 0; i < fLen; i++) {<br>
+                            text += "li + fruits[i] + "/li";<br>
+                            }<br>
+                            text += "/ul";<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>pop()</h3>
+                        <p>
+                            The pop() method removes the last element from an array.
+                            The pop() method also returns the value that was "popped out"
+                        </p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"]; // Mango will be removed<br>
+                            let popped = fruits.pop(); //popped will contain the string Mango
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>push()</h3>
+                        <p>The push() method adds a new element to an array (at the end)</p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            fruits.push("Kiwi");<br>
+                            //fruits new value: ["Banana", "Orange", "Apple", "Mango", "Kiwi"]
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>shift()</h3>
+                        <p>The shift() method removes the first array element and "shifts" all other elements to a lower index.</p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            fruits.shift();<br>
+                            // fruits new value: "Orange", "Apple", "Mango"
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>unshift()</h3>
+                        <p>The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements</p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            fruits.unshift("Lemon");<br>
+                            //fruits new value: "Lemon", "Banana", "Orange", "Apple", "Mango"
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>join()</h3>
+                        <p>The join() method also joins all array elements into a string.
+                            It behaves just like toString(), but in addition you can specify the separator
+                        </p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            document.getElementById("demo").innerHTML = fruits.join(" * ");<br>
+                            //Banana * Orange * Apple * Mango
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>delete()</h3>
+                        <p>
+                            Array elements can be deleted using the JavaScript operator delete.
+
+                            Using delete leaves undefined holes in the array.
+                            
+                            Use pop() or shift() instead.                            
+                        </p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            delete fruits[0];<br>
+                            //index 0 is undefined
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>concat()</h3>
+                        <p>The concat() method returns a new array by merging (concatenating) existing arrays</p>
+                        <div class = "code_block">
+                            const myGirls = ["Cecilie", "Lone"];<br>
+                            const myBoys = ["Emil", "Tobias", "Linus"];<br><br>
+                            
+                            const myChildren = myGirls.concat(myBoys);<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>flat()</h3>
+                        <p>The flat() method returns an array with sub-array elements concatenated to a specified depth.</p>
+                        <div class = "code_block">
+                            const myArr = [[1,2],[3,4],[5,6]];<br>
+                            const newArr = myArr.flat();<br>
+                            //newArr value: 1,2,3,4,5,6
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>splice()</h3>
+                        <p>
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                            fruits.splice(2, 0, "Lemon", "Kiwi");
+                            The first parameter (2) defines the position where new elements should be added (spliced in).
+                            The second parameter (0) defines how many elements should be removed.
+                        </p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            fruits.splice(2, 0, "Lemon", "Kiwi");<br>
+                            //fruit new value: Banana,Orange,Lemon,Kiwi,Apple,Mango
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>slice()</h3>
+                        <p>
+                            The slice() method slices out a piece of an array into a new array.
+                            The slice() method does not remove any elements from the source array.
+                        </p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br>
+                            const citrus = fruits.slice(3);<br>
+                            //citrus value: Apple,Mango
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>sort()</h3>
+                        <p>method sorts an array alphabetically</p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            fruits.sort();<br>
+                            //fruits new value: Apple,Banana,Mango,Orange
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>reverse()</h3>
+                        <p>method sorts an array alphabetically reversed</p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            fruits.sort();<br>
+                            fruits.reverse();<br>
+                            //fruits new value: Orange,Mango,Banana,Apple
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>numeric sort</h3>
+                        <p>
+                            By default, the sort() function sorts values as strings.
+                            This works well for strings ("Apple" comes before "Banana").
+                            However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+                            Because of this, the sort() method will produce incorrect result when sorting numbers.
+                            You can fix this by providing a compare function:
+                        </p>
+                        <div class = "code_block">
+                            const points = [40, 100, 1, 5, 25, 10];<br>
+                            points.sort(function(a, b){return a - b});                           
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Sorting an Array in Random Order</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            const points = [40, 100, 1, 5, 25, 10];<br>
+                            points.sort(function(){return 0.5 - Math.random()});                           
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>The Fisher Yates Method</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            const points = [40, 100, 1, 5, 25, 10];<br><br>
+
+                            for (let i = points.length -1; i > 0; i--) {<br>
+                              let j = Math.floor(Math.random() * (i+1));<br>
+                              let k = points[i];<br>
+                              points[i] = points[j];<br>
+                              points[j] = k;<br>
+                            }<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Find the Highest (or Lowest) Array Value</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            const points = [40, 100, 1, 5, 25, 10];<br>
+                            points.sort(function(a, b){return a - b});<br>
+                            // now points[0] contains the lowest value
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.max()</h3>
+                        <p>You can use Math.max.apply to find the highest number in an array</p>
+                        <div class = "code_block">
+                            function myArrayMax(arr) {<br>
+                                return Math.max.apply(null, arr);<br>
+                              }                            
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Math.min()</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            function myArrayMin(arr) {<br>
+                                return Math.min.apply(null, arr);<br>
+                              }
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Sorting Object Arrays</h3>
+                        <p></p>
+                        <div class = "code_block">
+                            cars.sort(function(a, b){return a.year - b.year});
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>forEach()</h3>
+                        <p>The forEach() method calls a function (a callback function) once for each array element.</p>
+                        <div class = "code_block">
+                            const numbers = [45, 4, 9, 16, 25];<br>
+                            let txt = "";<br>
+                            numbers.forEach(myFunction);<br><br>
+                            
+                            function myFunction(value, index, array) {<br>
+                              txt += value + "\n";<br>
+                            }
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>map()</h3>
+                        <p>
+                            The map() method creates a new array by performing a function on each array element.
+
+                            The map() method does not execute the function for array elements without values.
+                            
+                            The map() method does not change the original array.
+                            
+                            This example multiplies each array value by 2                           
+                        </p>
+                        <div class = "code_block">
+                            const numbers1 = [45, 4, 9, 16, 25];<br>
+                            const numbers2 = numbers1.map(myFunction);<br><br>
+                            
+                            function myFunction(value, index, array) {<br>
+                              return value * 2;<br>
+                            }
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>flatMap()</h3>
+                        <p>The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.</p>
+                        <div class = "code_block">
+                            const myArr = [1, 2, 3, 4, 5, 6];<br>
+                            const newArr = myArr.flatMap((x) => x * 2);
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>filter()</h3>
+                        <p>The filter() method creates a new array with array elements that pass a test.</p>
+                        <div class = "code_block">
+                            const numbers = [45, 4, 9, 16, 25];<br>
+                            const over18 = numbers.filter(myFunction);<br><br>
+                            
+                            function myFunction(value, index, array) {<br>
+                              return value > 18;<br>
+                            }<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>reduce()</h3>
+                        <p>
+                            The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+                            The reduce() method works from left-to-right in the array. See also reduceRight().
+                            
+                            The reduce() method does not reduce the original array.   
+                        </p>
+                        <div class = "code_block">
+                            const numbers = [45, 4, 9, 16, 25];<br>
+                            let sum = numbers.reduce(myFunction);<br><br>
+                            
+                            function myFunction(total, value, index, array) {<br>
+                              return total + value;<br>
+                            }<br>
+                            //99
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>reduceRight()</h3>
+                        <p>
+                            The reduceRight() works from right-to-left in the array.                                                  
+                        </p>
+                        <div class = "code_block">
+                            const numbers = [45, 4, 9, 16, 25];<br>
+                            let sum = numbers.reduceRight(myFunction);<br><br>
+                            
+                            function myFunction(total, value, index, array) {<br>
+                              return total + value;<br>
+                            }                   
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>every()</h3>
+                        <p>The every() method checks if all array values pass a test. Returns a BOOL</p>
+                        <div class = "code_block">
+                            const numbers = [45, 4, 9, 16, 25];<br>
+                            let allOver18 = numbers.every(myFunction);<br><br>
+                            
+                            function myFunction(value, index, array) {<br>
+                              return value > 18;<br>
+                            }<br>
+                            //false
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>some()</h3>
+                        <p>The some() method checks if some array values pass a test. Returns a BOOL</p>
+                        <div class = "code_block">
+                            const numbers = [45, 4, 9, 16, 25];<br>
+                            let someOver18 = numbers.some(myFunction);<br><br>
+                            
+                            function myFunction(value, index, array) {<br>
+                              return value > 18;<br>
+                            }<br>
+                            //true
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>indexOf()</h3>
+                        <p>The indexOf() method searches an array for an element value and returns its position.</p>
+                        <div class = "code_block">
+                            const fruits = ["Apple", "Orange", "Apple", "Mango"];<br>
+                            let position = fruits.indexOf("Apple") + 1;
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>lastIndexOf()</h3>
+                        <p>Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.</p>
+                        <div class = "code_block">
+                            const fruits = ["Apple", "Orange", "Apple", "Mango"];<br>
+                            let position = fruits.lastIndexOf("Apple") + 1;                            
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>find()</h3>
+                        <p>The find() method returns the value of the first array element that passes a test function.</p>
+                        <div class = "code_block">
+                            const numbers = [4, 9, 16, 25, 29];<br>
+                            let first = numbers.find(myFunction);<br><br>
+                            
+                            function myFunction(value, index, array) {<br>
+                              return value > 18;<br>
+                            }<br>
+                            //25
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>findIndex()</h3>
+                        <p>The findIndex() method returns the index of the first array element that passes a test function.</p>
+                        <div class = "code_block">
+                            const numbers = [4, 9, 16, 25, 29];<br>
+                            let first = numbers.findIndex(myFunction);<br><br>
+                            
+                            function myFunction(value, index, array) {<br>
+                              return value > 18;<br>
+                            }<br>
+                            //3
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Array.from()</h3>
+                        <p>The Array.from() method returns an Array object from any object with a length property or any iterable object.
+                            Its like split() but can work on other datatype other than string like sets
+                        </p>
+                        <div class = "code_block">
+                            Array.from("ABCDEFG");<br>
+                            //["A","B",. .. .]
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>Array.keys()</h3>
+                        <p>The Array.keys() method returns an Array Iterator object with the keys of an array.</p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            const keys = fruits.keys();<br><br>
+                            
+                            for (let x of keys) {<br>
+                              text += x + "br";<br>
+                            }<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>entries()</h3>
+                        <p>Create an Array Iterator, and then iterate over the key/value pairs:</p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                            const f = fruits.entries();<br><br>
+                            
+                            for (let x of f) {<br>
+                              document.getElementById("demo").innerHTML += x;<br>
+                            }<br>
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>includes()</h3>
+                        <p>ECMAScript 2016 introduced Array.includes() to arrays. 
+                            This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+                            returns a BOOL
+                        </p>
+                        <div class = "code_block">
+                            const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+
+                            fruits.includes("Mango"); // is true
+                        </div>
+                    </div>
+                    <div class = "content_block">
+                        <h3>JavaScript Array Spread (...)</h3>
+                        <p>The ... operator expands an iterable (like an array) into more elements:</p>
+                        <div class = "code_block">
+                            const q1 = ["Jan", "Feb", "Mar"];<br>
+                            const q2 = ["Apr", "May", "Jun"];<br>
+                            const q3 = ["Jul", "Aug", "Sep"];<br>
+                            const q4 = ["Oct", "Nov", "May"];<br><br>
+                            
+                            const year = [...q1, ...q2, ...q3, ...q4];<br>
+                            document.getElementById("demo").innerHTML = year;<br>
+                            //Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,May<br>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id = "right_panel" >
+
+                </div>
+
+            </div>
+
+            <div id = "footer">
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
